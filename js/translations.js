@@ -165,14 +165,14 @@ const translations = {
         // Experience Section
         experience: {
             title: "经验",
-            minecraft_title: "商业Minecraft角色扮演游戏服务器",
+            minecraft_title: "Minecraft RPG 游戏服务器:《一人之上》&《记忆代理人》",
             minecraft_role: "创始人和运营者",
             minecraft_point1: "开发并运营原创RPG服务器，通过PvP战斗和Boss挑战吸引了10,000多名玩家；通过游戏内购买、订阅和个性化商品实现了100多名玩家的持续参与。",
             minecraft_point2: "建立了一个由100多名活跃玩家组成的充满活力的社区，通过QQ群、游戏内邮件、群组投票和调查收集反馈，提高满意度和留存率。",
             minecraft_point3: "设计主题地图、武器模型和故事情节，创作了8,000多字的脚本。",
             minecraft_point4: "通过社交媒体（QQ、微信）、在线广告和Minecraft社区论坛（MCBBS）增加服务器知名度，扩大用户群，平均每天吸引20多名新玩家。",
-            club_title: "多大中文社团",
-            club_role: "IT部门成员",
+            club_title: "多大中文社团 UTChinese",
+            club_role: "信息技术部门员工",
             club_point1: "开发和维护俱乐部网站，增强用户体验并确保社团活动的及时发布。"
         },
 
@@ -182,21 +182,21 @@ const translations = {
             filter_all: "全部",
             filter_ux: "人机交互",
             filter_data: "数据分析",
-            filter_dev: "开发",
-            financial_title: "以人机交互为导向的财务管理应用程序设计",
+            filter_dev: "软件开发",
+            financial_title: "财务管理应用UI原型设计",
             financial_desc: "领导团队为大学生设计财务管理应用程序，进行全面的用户研究，创建原型，并实施迭代设计改进。",
             nba_title: "NBA球员表现的统计和数据分析",
             nba_desc: "使用统计方法分析NBA球员表现指标，以确定影响得分表现的因素，构建并完善多元线性回归模型。",
             tetris_title: "MIPS汇编语言俄罗斯方块游戏",
             tetris_desc: "独立开发MIPS汇编语言的俄罗斯方块游戏，实现方块生成、移动、旋转、碰撞检测等核心机制，使用基于像素的用户界面。",
-            todo_title: "基于Java的待办事项列表应用程序",
+            todo_title: "基于Java的Todo-list待办事项软件",
             todo_desc: "领导开发任务和截止日期管理应用程序，使用Java实现，应用清洁架构原则和设计模式，进行全面测试。"
         },
 
         // Skills Section
         skills: {
-            title: "技能",
-            achievements: "成就",
+            title: "成就",
+            achievements: "竞赛",
             usaco: "美国计算机奥林匹克竞赛 (USACO)",
             usaco_desc: "金牌组 (排名 1/3676)",
             euclid: "欧几里得数学竞赛",
