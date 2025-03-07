@@ -13,7 +13,7 @@ const translations = {
             skills: "Skills",
             contact: "Contact"
         },
-        
+
         // Hero Section
         hero: {
             role: "Computer Science & Statistics Student",
@@ -21,7 +21,7 @@ const translations = {
             contact: "Contact Me",
             resume: "Download Resume"
         },
-        
+
         // About Section
         about: {
             title: "About Me",
@@ -31,23 +31,24 @@ const translations = {
             goals: "I'm dedicated to academic exploration and technological innovation, seeking to make meaningful contributions to society through my work in computer science and data analysis.",
             name_label: "Name",
             email_label: "Email",
-            phone_label: "Phone",
+            location_label: "Location",
             education_label: "Education",
-            education_value: "University of Toronto"
+            education_value: "University of Toronto",
+            location_value: "Toronto, Canada"
         },
-        
+
         // Education Section
         education: {
             title: "Education",
             degree: "Bachelor of Science",
             program: "Computer Science & Statistics Double Major, Economics Minor",
             university: "University of Toronto, Toronto, Canada",
-            gpa: "CGPA: 3.74/4.0",
+
             honors: "Dean's List Scholar (2022-2025)",
             courses_title: "Core Courses",
             courses: "Software Design, Data Structures and Analysis, Computer Organization, Systems Programming, UX/HCI, Databases, Probability, Statistics and Data Analysis, Web Programming, Operating Systems, Artificial Intelligence"
         },
-        
+
         // Experience Section
         experience: {
             title: "Experience",
@@ -61,7 +62,7 @@ const translations = {
             club_role: "Staff, Information Solutions Department",
             club_point1: "Developed and maintained the club website, enhancing user experience and ensuring timely event announcements."
         },
-        
+
         // Projects Section
         projects: {
             title: "Projects",
@@ -78,7 +79,7 @@ const translations = {
             todo_title: "Java-based Todo List Application",
             todo_desc: "Led the development of a task and deadline management application using Java, implementing Clean Architecture principles and design patterns with comprehensive testing."
         },
-        
+
         // Skills Section
         skills: {
             title: "Skills",
@@ -92,12 +93,12 @@ const translations = {
             purple: "Purple Comet Math Meet",
             purple_desc: "Team First Place (Ranked 1/3353)"
         },
-        
+
         // Contact Section
         contact: {
             title: "Contact Me",
             email: "Email",
-            phone: "Phone",
+            github: "GitHub",
             location: "Location",
             location_value: "Toronto, Canada",
             name: "Name",
@@ -106,14 +107,14 @@ const translations = {
             message: "Message",
             send: "Send Message"
         },
-        
+
         // Footer
         footer: {
             tagline: "Computer Science & Statistics Student",
             copyright: "© 2025 Xuanyi Lyu. All rights reserved."
         }
     },
-    
+
     zh: {
         // Navigation
         nav: {
@@ -125,7 +126,7 @@ const translations = {
             skills: "技能",
             contact: "联系我"
         },
-        
+
         // Hero Section
         hero: {
             role: "计算机科学与统计学学生",
@@ -133,7 +134,7 @@ const translations = {
             contact: "联系我",
             resume: "下载简历"
         },
-        
+
         // About Section
         about: {
             title: "关于我",
@@ -143,23 +144,24 @@ const translations = {
             goals: "我致力于学术探索和技术创新，希望通过我在计算机科学和数据分析方面的工作为社会做出有意义的贡献。",
             name_label: "姓名",
             email_label: "邮箱",
-            phone_label: "电话",
+            location_label: "位置",
             education_label: "教育",
-            education_value: "多伦多大学"
+            education_value: "多伦多大学",
+            location_value: "多伦多，加拿大"
         },
-        
+
         // Education Section
         education: {
             title: "教育背景",
             degree: "理学学士",
             program: "计算机科学与统计学双专业，经济学辅修",
             university: "多伦多大学，多伦多，加拿大",
-            gpa: "CGPA: 3.74/4.0",
+
             honors: "院长名单学者 (2022-2025)",
             courses_title: "核心课程",
             courses: "软件设计，数据结构与分析，计算机组成，系统编程，人机交互，数据库，概率论，统计与数据分析，Web编程，操作系统，人工智能"
         },
-        
+
         // Experience Section
         experience: {
             title: "经验",
@@ -173,7 +175,7 @@ const translations = {
             club_role: "信息解决方案部门成员",
             club_point1: "开发和维护俱乐部网站，增强用户体验并确保活动的及时发布。"
         },
-        
+
         // Projects Section
         projects: {
             title: "项目",
@@ -190,7 +192,7 @@ const translations = {
             todo_title: "基于Java的待办事项列表应用程序",
             todo_desc: "领导开发任务和截止日期管理应用程序，使用Java实现，应用清洁架构原则和设计模式，进行全面测试。"
         },
-        
+
         // Skills Section
         skills: {
             title: "技能",
@@ -204,12 +206,12 @@ const translations = {
             purple: "紫彗星数学竞赛",
             purple_desc: "团队第一名 (排名 1/3353)"
         },
-        
+
         // Contact Section
         contact: {
             title: "联系我",
             email: "邮箱",
-            phone: "电话",
+            github: "GitHub",
             location: "位置",
             location_value: "多伦多，加拿大",
             name: "姓名",
@@ -218,7 +220,7 @@ const translations = {
             message: "消息",
             send: "发送消息"
         },
-        
+
         // Footer
         footer: {
             tagline: "计算机科学与统计学学生",
