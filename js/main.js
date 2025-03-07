@@ -32,82 +32,86 @@ window.addEventListener('load', () => {
 });
 
 /**
- * Particles.js Configuration
+ * Particles.js Starry Sky Configuration
  */
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof particlesJS !== 'undefined') {
     particlesJS('particles-js', {
       particles: {
         number: {
-          value: 80,
+          value: 150,
           density: {
             enable: true,
             value_area: 800
           }
         },
         color: {
-          value: '#4a6cf7'
+          value: "#ffffff"
         },
         shape: {
-          type: 'circle',
+          type: "circle",
           stroke: {
             width: 0,
-            color: '#000000'
+            color: "#000000"
           }
         },
         opacity: {
-          value: 0.5,
-          random: false,
+          value: 0.8,
+          random: true,
           anim: {
-            enable: false
+            enable: true,
+            speed: 0.5,
+            opacity_min: 0.1,
+            sync: false
           }
         },
         size: {
-          value: 3,
+          value: 2,
           random: true,
           anim: {
-            enable: false
+            enable: true,
+            speed: 1,
+            size_min: 0.1,
+            sync: false
           }
         },
         line_linked: {
-          enable: true,
-          distance: 150,
-          color: '#4a6cf7',
-          opacity: 0.4,
-          width: 1
+          enable: false
         },
         move: {
           enable: true,
-          speed: 2,
-          direction: 'none',
-          random: false,
+          speed: 0.3,
+          direction: "none",
+          random: true,
           straight: false,
-          out_mode: 'out',
+          out_mode: "out",
           bounce: false
         }
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: "canvas",
         events: {
           onhover: {
             enable: true,
-            mode: 'grab'
+            mode: "bubble"
           },
           onclick: {
             enable: true,
-            mode: 'push'
+            mode: "repulse"
           },
           resize: true
         },
         modes: {
-          grab: {
-            distance: 140,
-            line_linked: {
-              opacity: 1
-            }
+          bubble: {
+            distance: 100,
+            size: 4,
+            duration: 2,
+            opacity: 1,
+            speed: 3
           },
-          push: {
-            particles_nb: 4
+          repulse: {
+            distance: 150,
+            duration: 0.4
           }
         }
       },
@@ -161,10 +165,10 @@ navLinks.forEach(link => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
-    
+
     const targetId = this.getAttribute('href');
     if (targetId === '#') return;
-    
+
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
       window.scrollTo({
@@ -195,10 +199,10 @@ function updateActiveNavOnScroll() {
     const sectionTop = section.offsetTop - 100;
     const sectionHeight = section.offsetHeight;
     const sectionId = section.getAttribute('id');
-    
+
     if (
-      scrollPosition >= sectionTop &&
-      scrollPosition < sectionTop + sectionHeight
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionTop + sectionHeight
     ) {
       navLinks.forEach(link => {
         link.classList.remove('active');
@@ -220,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       en: 'Computer Science & Statistics Student',
       zh: '计算机科学与统计学学生'
     };
-    
+
     new Typed(typedElement, {
       strings: [strings[currentLang]],
       typeSpeed: 50,
@@ -229,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
       showCursor: true,
       cursorChar: '|'
     });
-    
+
     // Store the typed instance for language switching
     window.typedInstance = typedElement._typed;
   }
@@ -240,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function switchLanguage(lang) {
   currentLang = lang;
-  
+
   // Update active language button
   if (lang === 'en') {
     langEn.classList.add('active');
@@ -251,12 +255,12 @@ function switchLanguage(lang) {
     langEn.classList.remove('active');
     document.documentElement.lang = 'zh';
   }
-  
+
   // Update all text elements with data-i18n attribute
   document.querySelectorAll('[data-i18n]').forEach(element => {
     const key = element.getAttribute('data-i18n');
     const keyParts = key.split('.');
-    
+
     let value = translations[lang];
     for (const part of keyParts) {
       if (value && value[part] !== undefined) {
@@ -266,7 +270,7 @@ function switchLanguage(lang) {
         return;
       }
     }
-    
+
     if (element.classList.contains('typed')) {
       // Update typed.js text
       if (window.typedInstance) {
@@ -278,7 +282,7 @@ function switchLanguage(lang) {
       element.textContent = value;
     }
   });
-  
+
   // Save language preference
   localStorage.setItem('preferredLanguage', lang);
 }
@@ -302,9 +306,9 @@ filterBtns.forEach(btn => {
     // Update active filter button
     filterBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    
+
     const filterValue = btn.getAttribute('data-filter');
-    
+
     // Filter projects
     projectCards.forEach(card => {
       if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
@@ -322,7 +326,7 @@ filterBtns.forEach(btn => {
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     // Get form data
     const formData = {
       name: document.getElementById('name').value,
@@ -330,17 +334,17 @@ if (contactForm) {
       subject: document.getElementById('subject').value,
       message: document.getElementById('message').value
     };
-    
+
     // Display form submission message (for demonstration)
     alert(
-      currentLang === 'en'
-        ? 'Thank you for your message! I will get back to you soon.'
-        : '感谢您的留言！我将很快回复您。'
+        currentLang === 'en'
+            ? 'Thank you for your message! I will get back to you soon.'
+            : '感谢您的留言！我将很快回复您。'
     );
-    
+
     // Reset form
     contactForm.reset();
-    
+
     // In a real implementation, you would send this data to a server
     console.log('Form data:', formData);
   });
@@ -366,27 +370,27 @@ document.addEventListener('DOMContentLoaded', () => {
 const animateSkills = () => {
   const skillsSection = document.getElementById('skills');
   if (!skillsSection) return;
-  
+
   const skillBars = document.querySelectorAll('.skill-progress');
-  
+
   const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          skillBars.forEach(bar => {
-            const width = bar.style.width;
-            bar.style.width = '0';
-            setTimeout(() => {
-              bar.style.width = width;
-            }, 100);
-          });
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.1 }
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            skillBars.forEach(bar => {
+              const width = bar.style.width;
+              bar.style.width = '0';
+              setTimeout(() => {
+                bar.style.width = width;
+              }, 100);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
   );
-  
+
   observer.observe(skillsSection);
 };
 
