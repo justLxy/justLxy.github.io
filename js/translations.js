@@ -130,7 +130,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "多伦多大学 2026 届在读生。",
+            description: "多伦多大学 2026 届在读本科生。",
             contact: "联系我",
             resume: "下载简历"
         },
