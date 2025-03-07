@@ -299,7 +299,7 @@ if (contactForm) {
     const checkDailyLimit = () => {
         const today = new Date().toISOString().split('T')[0];
         const dailyCount = localStorage.getItem(`emailSubmitCount_${today}`) || 0;
-        const dailyLimit = 2; // Maximum 5 emails per day
+        const dailyLimit = 2; // Maximum 2 emails per day
 
         return {
             canSubmit: parseInt(dailyCount) < dailyLimit,
