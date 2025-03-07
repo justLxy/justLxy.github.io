@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 });
 
 /**
- * Particles.js Starry Sky Configuration
+ * Particles.js Starry Sky Configuration for Hero Section
  */
 document.addEventListener('DOMContentLoaded', () => {
   if (typeof particlesJS !== 'undefined') {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         },
         color: {
-          value: "#ffffff"
+          value: ["#ffffff", "#87ceeb", "#e3e3ff", "#fffae0"]
         },
         shape: {
           type: "circle",
