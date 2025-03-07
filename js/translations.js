@@ -17,7 +17,7 @@ const translations = {
         // Hero Section
         hero: {
             role: "Computer Science & Statistics Student",
-            description: "Computer Science & Statistics student at University of Toronto passionate about UX/HCI, AI, and Machine Learning.",
+            description: "Student at University of Toronto passionate about UX/HCI, AI, and Machine Learning.",
             contact: "Contact Me",
             resume: "Download Resume"
         },
