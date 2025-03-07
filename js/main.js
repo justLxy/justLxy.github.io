@@ -270,7 +270,7 @@ if (contactForm) {
     // Prevent spam: check cooldown time
     const checkCooldown = () => {
         const lastSubmitTime = localStorage.getItem('lastEmailSubmitTime');
-        const cooldownPeriod = 60 * 1000; // 60 seconds cooldown
+        const cooldownPeriod = 300 * 1000; // 300 seconds cooldown
 
         if (lastSubmitTime) {
             const timeElapsed = Date.now() - parseInt(lastSubmitTime);
@@ -299,7 +299,7 @@ if (contactForm) {
     const checkDailyLimit = () => {
         const today = new Date().toISOString().split('T')[0];
         const dailyCount = localStorage.getItem(`emailSubmitCount_${today}`) || 0;
-        const dailyLimit = 5; // Maximum 5 emails per day
+        const dailyLimit = 2; // Maximum 5 emails per day
 
         return {
             canSubmit: parseInt(dailyCount) < dailyLimit,
