@@ -24,18 +24,18 @@ let typed = null;
 // 打字机文字配置
 const typedStrings = {
     en: [
-        'UofT Student',
-        'Full Stack Developer',
-        'UX/HCI Enthusiast',
-        'AI & ML Explorer',
-        'Problem Solver'
+        'I\'m UofT Student',
+        'I\'m Full Stack Developer',
+        'I\'m UX/HCI Enthusiast',
+        'I\'m AI & ML Explorer',
+        'I\'m Problem Solver'
     ],
     zh: [
-        '多伦多大学学生',
-        '全栈开发学习者',
-        '用户体验设计爱好者',
-        '人工智能探索者',
-        '善于解决问题的人'
+        '我是多伦多大学学生',
+        '我是全栈开发学习者',
+        '我是用户体验设计爱好者',
+        '我是人工智能探索者',
+        '我是善于解决问题的人'
     ]
 };
 
