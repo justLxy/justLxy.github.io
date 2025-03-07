@@ -267,8 +267,71 @@ filterBtns.forEach(btn => {
  * Contact Form Submission
  */
 if (contactForm) {
+  // 防止刷屏：检查上次发送时间
+  const checkCooldown = () => {
+    const lastSubmitTime = localStorage.getItem('lastEmailSubmitTime');
+    const cooldownPeriod = 60 * 1000; // 60秒冷却时间
+    
+    if (lastSubmitTime) {
+      const timeElapsed = Date.now() - parseInt(lastSubmitTime);
+      if (timeElapsed < cooldownPeriod) {
+        const remainingSeconds = Math.ceil((cooldownPeriod - timeElapsed) / 1000);
+        return {
+          canSubmit: false,
+          remainingSeconds: remainingSeconds
+        };
+      }
+    }
+    
+    return { canSubmit: true };
+  };
+  
+  // 记录发送次数
+  const incrementSubmitCount = () => {
+    const today = new Date().toISOString().split('T')[0]; // 获取当前日期 YYYY-MM-DD
+    const dailyCount = localStorage.getItem(`emailSubmitCount_${today}`) || 0;
+    
+    localStorage.setItem(`emailSubmitCount_${today}`, parseInt(dailyCount) + 1);
+    return parseInt(dailyCount) + 1;
+  };
+  
+  // 检查当日发送次数限制
+  const checkDailyLimit = () => {
+    const today = new Date().toISOString().split('T')[0];
+    const dailyCount = localStorage.getItem(`emailSubmitCount_${today}`) || 0;
+    const dailyLimit = 5; // 每日最多发送5封邮件
+    
+    return {
+      canSubmit: parseInt(dailyCount) < dailyLimit,
+      dailyCount: parseInt(dailyCount),
+      dailyLimit: dailyLimit
+    };
+  };
+
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
+    
+    // 检查冷却时间
+    const cooldownCheck = checkCooldown();
+    if (!cooldownCheck.canSubmit) {
+      alert(
+        currentLang === 'en'
+          ? `Please wait ${cooldownCheck.remainingSeconds} seconds before sending another message.`
+          : `请等待 ${cooldownCheck.remainingSeconds} 秒后再发送另一条消息。`
+      );
+      return;
+    }
+    
+    // 检查每日限制
+    const dailyLimitCheck = checkDailyLimit();
+    if (!dailyLimitCheck.canSubmit) {
+      alert(
+        currentLang === 'en'
+          ? `You have reached the daily limit of ${dailyLimitCheck.dailyLimit} messages.`
+          : `您已达到每日 ${dailyLimitCheck.dailyLimit} 条消息的限制。`
+      );
+      return;
+    }
 
     // 获取提交按钮并显示加载状态
     const submitBtn = contactForm.querySelector('button[type="submit"]');
@@ -289,6 +352,10 @@ if (contactForm) {
     emailjs.send('service_thrb14n', 'template_qt3v11p', templateParams)
       .then(function(response) {
         console.log('邮件发送成功!', response.status, response.text);
+        
+        // 记录发送时间和次数
+        localStorage.setItem('lastEmailSubmitTime', Date.now().toString());
+        const submitCount = incrementSubmitCount();
         
         // 显示成功消息
         alert(
