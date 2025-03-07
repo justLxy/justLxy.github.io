@@ -27,7 +27,7 @@ const typedStrings = {
         'I\'m UofT Student',
         'I\'m Full Stack Developer',
         'I\'m UX/HCI Enthusiast',
-        'I\'m AI & ML Explorer',
+        'I\'m AI Explorer',
         'I\'m Problem Solver'
     ],
     zh: [
