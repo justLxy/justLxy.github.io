@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xuanyi Lyu - Computer Science & Statistics student at University of Toronto. Expertise in UX/HCI, AI, and machine learning.">
+    <meta name="keywords" content="Xuanyi Lyu, Computer Science, Statistics, UX/HCI, AI, Machine Learning, University of Toronto">
+    <meta name="author" content="Xuanyi Lyu">
+    
+    <title>Xuanyi Lyu | Personal Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/48/000000/code.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Xuanyi Lyu",
+      "url": "https://xuanyilyu.github.io",
+      "sameAs": [
+        "mailto:xuanyi.lyu@mail.utoronto.ca"
+      ],
+      "jobTitle": "Computer Science & Statistics Student",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "University of Toronto"
+      },
+      "alumniOf": {
+        "@type": "Organization",
+        "name": "University of Toronto"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo-text">Xuanyi Lyu</a>
+            </div>
+            <div class="language-toggle">
+                <button id="lang-en" class="active">EN</button>
+                <span>|</span>
+                <button id="lang-zh">中文</button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Xuanyi Lyu">Xuanyi Lyu</h1>
+                <div class="typing-text">
+                    <span class="typed" data-i18n="hero.role"></span>
+                </div>
+                <p class="hero-description" data-i18n="hero.description">Computer Science & Statistics student at University of Toronto passionate about UX/HCI, AI, and Machine Learning.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn" data-i18n="hero.contact">Contact Me</a>
+                    <a href="xuanyi-lyu-resume.pdf" class="btn secondary-btn" download data-i18n="hero.resume">Download Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="img-container">
+                        <img src="https://avatars.githubusercontent.com/u/54585103?v=4" alt="Xuanyi Lyu" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3 data-i18n="about.greeting">Hello, I'm Xuanyi Lyu</h3>
+                    <p data-i18n="about.intro">I'm an INFJ-T passionate about technology and innovation. Currently pursuing a double major in Computer Science & Statistics with a minor in Economics at the University of Toronto.</p>
+                    <p data-i18n="about.interests">My interests include UX/HCI, Artificial Intelligence, and Machine Learning. I enjoy creating solutions that combine technical excellence with user-centered design.</p>
+                    <p data-i18n="about.goals">I'm dedicated to academic exploration and technological innovation, seeking to make meaningful contributions to society through my work in computer science and data analysis.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4 data-i18n="about.name_label">Name</h4>
+                                <p>Xuanyi Lyu</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-i18n="about.email_label">Email</h4>
+                                <p>xuanyi.lyu@mail.utoronto.ca</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-i18n="about.phone_label">Phone</h4>
+                                <p>+1 647-269-0338</p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4 data-i18n="about.education_label">Education</h4>
+                                <p data-i18n="about.education_value">University of Toronto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="education.title">Education</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="date">2022 - 2026 (Expected)</span>
+                        <h3 data-i18n="education.degree">Bachelor of Science</h3>
+                        <h4 data-i18n="education.program">Computer Science & Statistics Double Major, Economics Minor</h4>
+                        <p data-i18n="education.university">University of Toronto, Toronto, Canada</p>
+                        <ul class="achievements">
+                            <li data-i18n="education.gpa">CGPA: 3.74/4.0</li>
+                            <li data-i18n="education.honors">Dean's List Scholar (2022-2025)</li>
+                        </ul>
+                        <div class="courses">
+                            <h5 data-i18n="education.courses_title">Core Courses</h5>
+                            <p data-i18n="education.courses">Software Design, Data Structures and Analysis, Computer Organization, Systems Programming, UX/HCI, Databases, Probability, Statistics and Data Analysis, Web Programming, Operating Systems, Artificial Intelligence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="experience.title">Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="experience-items">
+                <div class="experience-item" data-aos="fade-up">
+                    <div class="experience-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="experience-content">
+                        <span class="date">2016 - Present</span>
+                        <h3 data-i18n="experience.minecraft_title">Commercial Minecraft Role-Playing Game Server</h3>
+                        <h4 data-i18n="experience.minecraft_role">Founder & Operator</h4>
+                        <ul class="responsibilities">
+                            <li data-i18n="experience.minecraft_point1">Developed and operated an original RPG server, attracting 10,000+ players through engaging PvP battles and boss challenges; achieved 100+ ongoing player involvement through in-game purchases, subscriptions, and personalized merchandise.</li>
+                            <li data-i18n="experience.minecraft_point2">Established a vibrant community of 100+ active players, enhancing satisfaction and retention through feedback from QQ groups, in-game mail, group polls, and surveys.</li>
+                            <li data-i18n="experience.minecraft_point3">Designed thematic maps, weapon models, and storylines, and created 8,000+ words of script.</li>
+                            <li data-i18n="experience.minecraft_point4">Expanded the user base by increasing server visibility through social media (QQ, WeChat), online advertising, and Minecraft community forums (MCBBS), attracting an average of 20+ new players daily.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item" data-aos="fade-up">
+                    <div class="experience-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="experience-content">
+                        <span class="date">2024 - Present</span>
+                        <h3 data-i18n="experience.club_title">University of Toronto Chinese Club</h3>
+                        <h4 data-i18n="experience.club_role">Staff, Information Solutions Department</h4>
+                        <ul class="responsibilities">
+                            <li data-i18n="experience.club_point1">Developed and maintained the club website, enhancing user experience and ensuring timely event announcements.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">All</button>
+                <button class="filter-btn" data-filter="ux" data-i18n="projects.filter_ux">UX/HCI</button>
+                <button class="filter-btn" data-filter="data" data-i18n="projects.filter_data">Data Analysis</button>
+                <button class="filter-btn" data-filter="development" data-i18n="projects.filter_dev">Development</button>
+            </div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="ux" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" alt="Financial Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2024 - Dec 2024</span>
+                        <h3 class="project-title" data-i18n="projects.financial_title">UX/HCI-Driven Financial Management Application Design</h3>
+                        <p class="project-description" data-i18n="projects.financial_desc">Lead a team in designing a financial management application for university students, conducting comprehensive user research, creating prototypes, and implementing iterative design improvements.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                            <span>Usability Testing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="data" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109acd27d?q=80&w=2090" alt="NBA Data Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2024 - Dec 2024</span>
+                        <h3 class="project-title" data-i18n="projects.nba_title">Statistics and Data Analysis of NBA Player Performance</h3>
+                        <p class="project-description" data-i18n="projects.nba_desc">Analyzed NBA player performance metrics using statistical methods to identify factors influencing scoring performance, building and refining a multiple linear regression model.</p>
+                        <div class="project-tech">
+                            <span>R</span>
+                            <span>Statistical Analysis</span>
+                            <span>Linear Regression</span>
+                            <span>Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="development" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" alt="Tetris Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Feb 2024 - May 2024</span>
+                        <h3 class="project-title" data-i18n="projects.tetris_title">MIPS Assembly Language Tetris Game</h3>
+                        <p class="project-description" data-i18n="projects.tetris_desc">Independently developed a Tetris game in MIPS assembly language, implementing core mechanics including block generation, movement, rotation, and collision detection with a pixel-based UI.</p>
+                        <div class="project-tech">
+                            <span>Assembly</span>
+                            <span>MIPS</span>
+                            <span>Game Development</span>
+                            <span>Bitmap Display</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="development" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=2070" alt="Todo List App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2023 - Jan 2024</span>
+                        <h3 class="project-title" data-i18n="projects.todo_title">Java-based Todo List Application</h3>
+                        <p class="project-description" data-i18n="projects.todo_desc">Led the development of a task and deadline management application using Java, implementing Clean Architecture principles and design patterns with comprehensive testing.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Clean Architecture</span>
+                            <span>Design Patterns</span>
+                            <span>JUnit 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category" data-aos="fade-up">
+                    <h3 data-i18n="skills.programming">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <h4>R</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h4>C/C++</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>SQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML/CSS</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                            <h4>Assembly</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category" data-aos="fade-up">
+                    <h3 data-i18n="skills.technologies">Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <h4>Linux</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <h4>Figma</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h4>Photoshop</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category" data-aos="fade-up">
+                    <h3 data-i18n="skills.achievements">Achievements</h3>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                            <div class="achievement-content">
+                                <h4 data-i18n="skills.usaco">USA Computing Olympiad (USACO)</h4>
+                                <p data-i18n="skills.usaco_desc">Gold Division (Ranked 1/3676)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                            <div class="achievement-content">
+                                <h4 data-i18n="skills.euclid">Euclid Mathematics Contest</h4>
+                                <p data-i18n="skills.euclid_desc">Excellence Award (Top 25%)</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                            <div class="achievement-content">
+                                <h4 data-i18n="skills.purple">Purple Comet Math Meet</h4>
+                                <p data-i18n="skills.purple_desc">Team First Place (Ranked 1/3353)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.email">Email</h3>
+                            <p><a href="mailto:xuanyi.lyu@mail.utoronto.ca">xuanyi.lyu@mail.utoronto.ca</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.phone">Phone</h3>
+                            <p><a href="tel:+16472690338">+1 647-269-0338</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact.location">Location</h3>
+                            <p data-i18n="contact.location_value">Toronto, Canada</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact.name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact.email_address">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact.subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact.message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" data-i18n="contact.send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Xuanyi Lyu</h3>
+                    <p data-i18n="footer.tagline">Computer Science & Statistics Student</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" data-i18n="nav.about">About</a></li>
+                        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Xuanyi Lyu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Particles.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
