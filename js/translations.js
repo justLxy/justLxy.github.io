@@ -96,7 +96,7 @@ const translations = {
             location: "Location",
             location_value: "Toronto, Canada",
             name: "Name",
-            email_address: "Email Address",
+            email_address: "Your Email Address",
             subject: "Subject",
             message: "Message",
             send: "Send Message"
@@ -203,7 +203,7 @@ const translations = {
             location: "位置",
             location_value: "多伦多，加拿大",
             name: "姓名",
-            email_address: "邮箱地址",
+            email_address: "你的邮箱地址",
             subject: "主题",
             message: "消息",
             send: "发送消息"
