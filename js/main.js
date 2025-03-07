@@ -270,26 +270,50 @@ if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Get form data
-    const formData = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
+    // 获取提交按钮并显示加载状态
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = currentLang === 'en' ? 'Sending...' : '发送中...';
+
+    // 准备发送的参数
+    const templateParams = {
+      from_name: document.getElementById('name').value,
+      from_email: document.getElementById('email').value,
       subject: document.getElementById('subject').value,
       message: document.getElementById('message').value
     };
 
-    // Display form submission message (for demonstration)
-    alert(
-        currentLang === 'en'
+    // 使用EmailJS发送邮件
+    // 请替换为您的服务ID和模板ID
+    emailjs.send('service_thrb14n', 'template_qt3v11p', templateParams)
+      .then(function(response) {
+        console.log('邮件发送成功!', response.status, response.text);
+        
+        // 显示成功消息
+        alert(
+          currentLang === 'en'
             ? 'Thank you for your message! I will get back to you soon.'
             : '感谢您的留言！我将很快回复您。'
-    );
-
-    // Reset form
-    contactForm.reset();
-
-    // In a real implementation, you would send this data to a server
-    console.log('Form data:', formData);
+        );
+        
+        // 重置表单
+        contactForm.reset();
+      }, function(error) {
+        console.log('邮件发送失败...', error);
+        
+        // 显示错误消息
+        alert(
+          currentLang === 'en'
+            ? 'Sorry, there was an error sending your message. Please try again later.'
+            : '抱歉，发送消息时出错。请稍后再试。'
+        );
+      })
+      .finally(function() {
+        // 恢复按钮状态
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      });
   });
 }
 
