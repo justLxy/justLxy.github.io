@@ -31,10 +31,8 @@ const translations = {
             goals: "I'm dedicated to academic exploration and technological innovation, seeking to make meaningful contributions to society through my work in computer science and data analysis.",
             name_label: "Name",
             email_label: "Email",
-            location_label: "Location",
             education_label: "Education",
-            education_value: "University of Toronto",
-            location_value: "Toronto, Canada"
+            education_value: "University of Toronto"
         },
 
         // Education Section
@@ -43,7 +41,6 @@ const translations = {
             degree: "Bachelor of Science",
             program: "Computer Science & Statistics Double Major, Economics Minor",
             university: "University of Toronto, Toronto, Canada",
-
             honors: "Dean's List Scholar (2022-2025)",
             courses_title: "Core Courses",
             courses: "Software Design, Data Structures and Analysis, Computer Organization, Systems Programming, UX/HCI, Databases, Probability, Statistics and Data Analysis, Web Programming, Operating Systems, Artificial Intelligence"
@@ -83,8 +80,6 @@ const translations = {
         // Skills Section
         skills: {
             title: "Skills",
-            programming: "Programming Languages",
-            technologies: "Technologies",
             achievements: "Achievements",
             usaco: "USA Computing Olympiad (USACO)",
             usaco_desc: "Gold Division (Ranked 1/3676)",
@@ -98,7 +93,6 @@ const translations = {
         contact: {
             title: "Contact Me",
             email: "Email",
-            github: "GitHub",
             location: "Location",
             location_value: "Toronto, Canada",
             name: "Name",
@@ -144,10 +138,8 @@ const translations = {
             goals: "我致力于学术探索和技术创新，希望通过我在计算机科学和数据分析方面的工作为社会做出有意义的贡献。",
             name_label: "姓名",
             email_label: "邮箱",
-            location_label: "位置",
             education_label: "教育",
-            education_value: "多伦多大学",
-            location_value: "多伦多，加拿大"
+            education_value: "多伦多大学"
         },
 
         // Education Section
@@ -156,7 +148,6 @@ const translations = {
             degree: "理学学士",
             program: "计算机科学与统计学双专业，经济学辅修",
             university: "多伦多大学，多伦多，加拿大",
-
             honors: "院长名单学者 (2022-2025)",
             courses_title: "核心课程",
             courses: "软件设计，数据结构与分析，计算机组成，系统编程，人机交互，数据库，概率论，统计与数据分析，Web编程，操作系统，人工智能"
@@ -209,7 +200,6 @@ const translations = {
         contact: {
             title: "联系我",
             email: "邮箱",
-            github: "GitHub",
             location: "位置",
             location_value: "多伦多，加拿大",
             name: "姓名",

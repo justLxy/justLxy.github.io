@@ -24,14 +24,14 @@ let typed = null;
 // 打字机文字配置
 const typedStrings = {
     en: [
-        'I\'m UofT Student',
+        'I\'m INFJ-T',
         'I\'m Full Stack Developer',
         'I\'m UX/HCI Enthusiast',
         'I\'m AI Explorer',
         'I\'m Problem Solver'
     ],
     zh: [
-        '我是多伦多大学学生',
+        '我是INFJ-T',
         '我是全栈开发学习者',
         '我是用户体验设计爱好者',
         '我是人工智能探索者',
@@ -50,9 +50,9 @@ function initTyped(lang) {
 
     typed = new Typed('.typed', {
         strings: typedStrings[lang],
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 2000,
+        typeSpeed: 40,  // 降低打字速度
+        backSpeed: 25,  // 降低退格速度
+        backDelay: 3000,  // 增加停留时间
         startDelay: 500,
         loop: true,
         showCursor: true,
