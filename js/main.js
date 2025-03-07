@@ -349,7 +349,7 @@ if (contactForm) {
 
     // 使用EmailJS发送邮件
     // 请替换为您的服务ID和模板ID
-    emailjs.send('service_thrb14n', 'template_8v9e0cw', templateParams)
+    emailjs.send('service_thrb14n', 'template_zkqwiqb', templateParams)
       .then(function(response) {
         console.log('邮件发送成功!', response.status, response.text);
         
