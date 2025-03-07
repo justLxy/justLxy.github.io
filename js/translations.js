@@ -17,8 +17,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            role: "Computer Science & Statistics Student",
-            description: "Student at University of Toronto passionate about UX/HCI, AI, and Machine Learning.",
+            description: "Student at University of Toronto from the class of 2026.",
             contact: "Contact Me",
             resume: "Download Resume"
         },
@@ -131,8 +130,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            role: "计算机科学与统计学学生",
-            description: "多伦多大学在读，热衷于人机交互、人工智能和机器学习。",
+            description: "2026届多伦多大学在读生。",
             contact: "联系我",
             resume: "下载简历"
         },
