@@ -3,6 +3,7 @@
  */
 const translations = {
     en: {
+        name: 'Xuanyi Lyu',
         // Navigation
         nav: {
             home: "Home",
@@ -116,15 +117,16 @@ const translations = {
     },
 
     zh: {
+        name: '吕宣谊',
         // Navigation
         nav: {
             home: "首页",
-            about: "关于我",
-            education: "教育背景",
-            experience: "经验",
+            about: "关于",
+            education: "教育",
+            experience: "经历",
             projects: "项目",
             skills: "技能",
-            contact: "联系我"
+            contact: "联系"
         },
 
         // Hero Section
@@ -223,7 +225,7 @@ const translations = {
 
         // Footer
         footer: {
-            tagline: "计算机科学与统计学学生",
+            tagline: "计算机科学与统计学专业学生",
             copyright: "© 2025 吕宣谊。保留所有权利。"
         }
     }

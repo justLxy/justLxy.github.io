@@ -367,46 +367,33 @@ img {
     align-items: center;
     overflow: hidden;
     z-index: 1;
-    background: linear-gradient(125deg, #000428, #004e92);
-    background-size: 200% 200%;
-    animation: gradientBG 20s ease infinite;
+    background: linear-gradient(125deg, #0a192f, #112240, #1a365d);
+    background-size: 400% 400%;
+    animation: gradientBG 30s ease infinite;
 }
 
-.nebula {
+/* 星空背景 */
+.starry-sky {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
     z-index: 0;
+    background-color: transparent;
 }
 
-.hero::after {
-    content: '';
+/* 星星 */
+.star {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(ellipse at center, rgba(0, 40, 83, 0) 0%, rgba(0, 40, 83, 0.7) 100%);
-    z-index: 0;
-    pointer-events: none;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle var(--twinkle-duration) ease-in-out infinite;
+    animation-delay: var(--twinkle-delay);
 }
 
-@keyframes twinkle {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: -650px 650px;
-    }
-}
-
-/* Shooting star animation */
+/* 流星 */
 .shooting-star {
     position: absolute;
     z-index: 1;
@@ -416,89 +403,208 @@ img {
 }
 
 .shooting-star:nth-child(1) {
-    top: 10%;
-    left: 70%;
-    width: 200px;
-    height: 2px;
-    transform: rotate(35deg);
+    top: 5%;
+    right: 5%;
+    width: 250px;
+    height: 1.5px;
+    transform: rotate(-45deg);
     background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
-    animation: shootingStar1 8s linear infinite;
-    animation-delay: 2s;
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.4);
+    animation: shootingStar1 12s ease-in-out infinite;
+    animation-delay: 0s;
 }
 
 .shooting-star:nth-child(2) {
-    top: 25%;
-    left: 30%;
-    width: 150px;
-    height: 2px;
-    transform: rotate(-15deg);
-    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
-    animation: shootingStar2 12s linear infinite;
-    animation-delay: 5s;
+    top: 20%;
+    right: 35%;
+    width: 200px;
+    height: 1.5px;
+    transform: rotate(-35deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.3);
+    animation: shootingStar2 15s ease-in-out infinite;
+    animation-delay: 4s;
 }
 
 .shooting-star:nth-child(3) {
-    top: 45%;
-    left: 60%;
+    top: 35%;
+    right: 15%;
     width: 180px;
-    height: 2px;
-    transform: rotate(20deg);
-    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 100%);
-    animation: shootingStar3 10s linear infinite;
-    animation-delay: 7s;
+    height: 1.5px;
+    transform: rotate(-40deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.35);
+    animation: shootingStar3 18s ease-in-out infinite;
+    animation-delay: 8s;
 }
 
+.shooting-star:nth-child(4) {
+    top: 15%;
+    right: 55%;
+    width: 220px;
+    height: 1.5px;
+    transform: rotate(-42deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.3);
+    animation: shootingStar4 20s ease-in-out infinite;
+    animation-delay: 12s;
+}
+
+.shooting-star:nth-child(5) {
+    top: 45%;
+    right: 40%;
+    width: 190px;
+    height: 1.5px;
+    transform: rotate(-38deg);
+    background: linear-gradient(90deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0) 100%);
+    box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.35);
+    animation: shootingStar5 16s ease-in-out infinite;
+    animation-delay: 6s;
+}
+
+/* 星云效果 */
+.nebula {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 0;
+    filter: blur(4px);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(10, 25, 47, 0) 0%, rgba(10, 25, 47, 0.7) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 星星闪烁动画 */
+@keyframes twinkle {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: var(--star-opacity);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+/* 流星动画 */
 @keyframes shootingStar1 {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(0) rotate(35deg);
+        transform: translateX(0) translateY(0) rotate(-45deg);
     }
     5% {
         opacity: 1;
     }
     20% {
-        transform: translateX(-200px) translateY(200px) rotate(35deg);
+        transform: translateX(-400px) translateY(400px) rotate(-45deg);
         opacity: 0;
     }
     100% {
         opacity: 0;
-        transform: translateX(-200px) translateY(200px) rotate(35deg);
+        transform: translateX(-400px) translateY(400px) rotate(-45deg);
     }
 }
 
 @keyframes shootingStar2 {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(0) rotate(-15deg);
+        transform: translateX(0) translateY(0) rotate(-35deg);
     }
     5% {
         opacity: 1;
     }
     20% {
-        transform: translateX(-150px) translateY(60px) rotate(-15deg);
+        transform: translateX(-350px) translateY(300px) rotate(-35deg);
         opacity: 0;
     }
     100% {
         opacity: 0;
-        transform: translateX(-150px) translateY(60px) rotate(-15deg);
+        transform: translateX(-350px) translateY(300px) rotate(-35deg);
     }
 }
 
 @keyframes shootingStar3 {
     0% {
         opacity: 0;
-        transform: translateX(0) translateY(0) rotate(20deg);
+        transform: translateX(0) translateY(0) rotate(-40deg);
     }
     5% {
         opacity: 1;
     }
     20% {
-        transform: translateX(-180px) translateY(100px) rotate(20deg);
+        transform: translateX(-380px) translateY(350px) rotate(-40deg);
         opacity: 0;
     }
     100% {
         opacity: 0;
-        transform: translateX(-180px) translateY(100px) rotate(20deg);
+        transform: translateX(-380px) translateY(350px) rotate(-40deg);
+    }
+}
+
+@keyframes shootingStar4 {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0) rotate(-42deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-420px) translateY(380px) rotate(-42deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-420px) translateY(380px) rotate(-42deg);
+    }
+}
+
+@keyframes shootingStar5 {
+    0% {
+        opacity: 0;
+        transform: translateX(0) translateY(0) rotate(-38deg);
+    }
+    5% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-390px) translateY(340px) rotate(-38deg);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-390px) translateY(340px) rotate(-38deg);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -708,6 +814,37 @@ img {
     min-height: 28px;
     animation: fadeIn 1s ease 0.5s forwards;
     opacity: 0;
+}
+
+/* 打字机效果样式 */
+.typed {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.typed-cursor {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-fade-out {
+    opacity: 0;
+    transition: opacity 0.25s;
 }
 
 .hero-description {
@@ -926,21 +1063,38 @@ img {
 }
 
 .about-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-sm);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--spacing-md);
     margin-top: var(--spacing-md);
+    justify-content: flex-start;
+    max-width: 800px;
 }
 
 .detail {
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
+    padding-right: 2rem;
+    flex: 1;
+}
+
+.detail:nth-child(1) {
+    flex: 0.7;
+}
+
+.detail:nth-child(2) {
+    flex: 1.3;
+}
+
+.detail:nth-child(3) {
+    flex: 1;
 }
 
 .detail i {
     font-size: var(--font-size-large);
     color: var(--primary-color);
+    min-width: 24px;
 }
 
 .detail h4 {
@@ -952,6 +1106,7 @@ img {
 .detail p {
     margin-bottom: 0;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -961,6 +1116,8 @@ img {
 .timeline {
     position: relative;
     padding: var(--spacing-md) 0;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .timeline::before {
@@ -977,6 +1134,8 @@ img {
 .timeline-item {
     position: relative;
     padding: var(--spacing-md) 0;
+    display: flex;
+    justify-content: center;
 }
 
 .timeline-icon {
@@ -998,25 +1157,18 @@ img {
 }
 
 .timeline-content {
-    position: relative;
-    width: 45%;
-    margin-left: auto;
+    width: 80%;
+    max-width: 600px;
     background-color: var(--white-color);
     padding: var(--spacing-md);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .timeline-content::before {
-    content: '';
-    position: absolute;
-    top: var(--spacing-md);
-    left: -15px;
-    width: 30px;
-    height: 30px;
-    background-color: var(--white-color);
-    transform: rotate(45deg);
-    z-index: -1;
+    display: none;
 }
 
 .timeline-content .date {
@@ -1332,55 +1484,12 @@ img {
     color: var(--primary-color);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: var(--spacing-md);
-}
-
-.skill-item {
-    background-color: var(--white-color);
-    padding: var(--spacing-md);
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: all var(--transition-normal) ease;
-}
-
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.skill-icon {
-    font-size: var(--font-size-xl);
-    color: var(--primary-color);
-    margin-bottom: var(--spacing-sm);
-}
-
-.skill-item h4 {
-    margin-bottom: var(--spacing-sm);
-}
-
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    background-color: rgba(74, 108, 247, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-progress {
-    height: 100%;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    transition: width 1.5s ease;
-}
-
 .achievements-list {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .achievement-item {
@@ -1721,6 +1830,10 @@ img {
 
     .experience-icon {
         margin-bottom: var(--spacing-sm);
+    }
+
+    .timeline-content {
+        width: 90%;
     }
 }
 

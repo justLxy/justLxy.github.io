@@ -19,16 +19,130 @@ const contactForm = document.getElementById('contactForm');
 // Current language (default: English)
 let currentLang = 'en';
 
+let typed = null;
+
+// 打字机文字配置
+const typedStrings = {
+    en: [
+        'UofT Student',
+        'Full Stack Developer',
+        'UX/HCI Enthusiast',
+        'AI & ML Explorer',
+        'Problem Solver'
+    ],
+    zh: [
+        '多伦多大学学生',
+        '全栈开发学习者',
+        '用户体验设计爱好者',
+        '人工智能探索者',
+        '善于解决问题的人'
+    ]
+};
+
 /**
- * Preloader
+ * 初始化打字机效果
+ * @param {string} lang - 语言代码 ('en' 或 'zh')
  */
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    preloader.style.opacity = '0';
+function initTyped(lang) {
+    if (typed) {
+        typed.destroy();
+    }
+
+    typed = new Typed('.typed', {
+        strings: typedStrings[lang],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        startDelay: 500,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|',
+        autoInsertCss: true,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+    });
+}
+
+/**
+ * Language Switcher
+ */
+function switchLanguage(lang) {
+    currentLang = lang;
+
+    // 更新打字机效果
+    initTyped(lang);
+
+    // 更新语言按钮状态
+    if (lang === 'en') {
+        langEn.classList.add('active');
+        langZh.classList.remove('active');
+        document.documentElement.lang = 'en';
+    } else {
+        langZh.classList.add('active');
+        langEn.classList.remove('active');
+        document.documentElement.lang = 'zh';
+    }
+
+    // 更新所有带有 data-i18n 属性的文本元素
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const keyParts = key.split('.');
+        
+        // 从翻译对象中获取对应的值
+        let value = translations[lang];
+        for (const part of keyParts) {
+            if (value && value[part] !== undefined) {
+                value = value[part];
+            } else {
+                // 如果找不到翻译，保持原文
+                value = element.textContent;
+                break;
+            }
+        }
+
+        // 更新文本内容
+        element.textContent = value;
+        
+        // 如果是 glitch 效果的元素，同时更新 data-text 属性
+        if (element.classList.contains('glitch')) {
+            element.setAttribute('data-text', value);
+        }
+    });
+
+    // 保存语言偏好
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // 加载保存的语言偏好或使用浏览器语言
+    const savedLang = localStorage.getItem('preferredLanguage');
+    const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
+    const initialLang = savedLang || browserLang;
+    
+    // 初始化语言和打字机效果
+    switchLanguage(initialLang);
+
+    // 语言切换事件处理
+    langEn.addEventListener('click', () => {
+        if (currentLang !== 'en') {
+            switchLanguage('en');
+        }
+    });
+
+    langZh.addEventListener('click', () => {
+        if (currentLang !== 'zh') {
+            switchLanguage('zh');
+        }
+    });
+
+    // 预加载器
     setTimeout(() => {
-      preloader.style.display = 'none';
-    }, 500);
-  }, 1000);
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500);
+    }, 1000);
 });
 
 // Removing particles.js configuration since we're using pure CSS animations
@@ -126,90 +240,6 @@ function updateActiveNavOnScroll() {
     }
   });
 }
-
-/**
- * Typed.js Animation for Hero Section
- */
-document.addEventListener('DOMContentLoaded', () => {
-  if (typeof Typed !== 'undefined') {
-    const typedElement = document.querySelector('.typed');
-    const strings = {
-      en: 'Computer Science & Statistics Student',
-      zh: '计算机科学与统计学学生'
-    };
-
-    new Typed(typedElement, {
-      strings: [strings[currentLang]],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: false,
-      showCursor: true,
-      cursorChar: '|'
-    });
-
-    // Store the typed instance for language switching
-    window.typedInstance = typedElement._typed;
-  }
-});
-
-/**
- * Language Switcher
- */
-function switchLanguage(lang) {
-  currentLang = lang;
-
-  // Update active language button
-  if (lang === 'en') {
-    langEn.classList.add('active');
-    langZh.classList.remove('active');
-    document.documentElement.lang = 'en';
-  } else {
-    langZh.classList.add('active');
-    langEn.classList.remove('active');
-    document.documentElement.lang = 'zh';
-  }
-
-  // Update all text elements with data-i18n attribute
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
-    const keyParts = key.split('.');
-
-    let value = translations[lang];
-    for (const part of keyParts) {
-      if (value && value[part] !== undefined) {
-        value = value[part];
-      } else {
-        console.warn(`Translation missing: ${key} for language ${lang}`);
-        return;
-      }
-    }
-
-    if (element.classList.contains('typed')) {
-      // Update typed.js text
-      if (window.typedInstance) {
-        window.typedInstance.strings = [value];
-        window.typedInstance.reset();
-      }
-    } else {
-      // Update regular text
-      element.textContent = value;
-    }
-  });
-
-  // Save language preference
-  localStorage.setItem('preferredLanguage', lang);
-}
-
-// Language button event listeners
-langEn.addEventListener('click', () => switchLanguage('en'));
-langZh.addEventListener('click', () => switchLanguage('zh'));
-
-// Load saved language preference or use browser language
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('preferredLanguage');
-  const browserLang = navigator.language.startsWith('zh') ? 'zh' : 'en';
-  switchLanguage(savedLang || browserLang);
-});
 
 /**
  * Project Filtering
