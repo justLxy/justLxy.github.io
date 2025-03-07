@@ -130,7 +130,7 @@ const translations = {
         // Hero Section
         hero: {
             role: "计算机科学与统计学学生",
-            description: "多伦多大学计算机科学与统计学专业学生，热衷于人机交互、人工智能和机器学习。",
+            description: "多伦多大学在读，热衷于人机交互、人工智能和机器学习。",
             contact: "联系我",
             resume: "下载简历"
         },
