@@ -111,7 +111,7 @@ const translations = {
 
         // Footer
         footer: {
-            tagline: "Computer Science & Statistics Student",
+            tagline: "xuanyi.lyu@mail.utoronto.ca",
             copyright: "© 2025 Xuanyi Lyu. All rights reserved."
         }
     },
@@ -173,9 +173,9 @@ const translations = {
             minecraft_point2: "建立了一个由100多名活跃玩家组成的充满活力的社区，通过QQ群、游戏内邮件、群组投票和调查收集反馈，提高满意度和留存率。",
             minecraft_point3: "设计主题地图、武器模型和故事情节，创作了8,000多字的脚本。",
             minecraft_point4: "通过社交媒体（QQ、微信）、在线广告和Minecraft社区论坛（MCBBS）增加服务器知名度，扩大用户群，平均每天吸引20多名新玩家。",
-            club_title: "多伦多大学中国学生会",
-            club_role: "信息解决方案部门成员",
-            club_point1: "开发和维护俱乐部网站，增强用户体验并确保活动的及时发布。"
+            club_title: "多大中文社团",
+            club_role: "IT部门成员",
+            club_point1: "开发和维护俱乐部网站，增强用户体验并确保社团活动的及时发布。"
         },
 
         // Projects Section
@@ -198,14 +198,12 @@ const translations = {
         // Skills Section
         skills: {
             title: "技能",
-            programming: "编程语言",
-            technologies: "技术",
             achievements: "成就",
             usaco: "美国计算机奥林匹克竞赛 (USACO)",
             usaco_desc: "金牌组 (排名 1/3676)",
             euclid: "欧几里得数学竞赛",
             euclid_desc: "卓越奖 (前25%)",
-            purple: "紫彗星数学竞赛",
+            purple: "紫色彗星数学竞赛",
             purple_desc: "团队第一名 (排名 1/3353)"
         },
 
@@ -225,7 +223,7 @@ const translations = {
 
         // Footer
         footer: {
-            tagline: "计算机科学与统计学专业学生",
+            tagline: "xuanyi.lyu@mail.utoronto.ca",
             copyright: "© 2025 吕宣谊。保留所有权利。"
         }
     }
