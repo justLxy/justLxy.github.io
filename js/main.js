@@ -24,36 +24,20 @@ let typed = null;
 // 打字机文字配置
 const typedStrings = {
     en: [
-        "I'm INFJ-T",
-        "I'm a Game Developer"
-        "I'm a Full Stack Developer",
-        "I'm a UX/HCI Enthusiast",
-        "I'm an AI Explorer",
-        "I'm a Deep Thinker",
-        "I'm a Visionary Creator",
-        "I'm an Empathetic Listener",
-        "I'm a Passionate Innovator",
-        "I'm a Thoughtful Strategist",
-        "I'm a Meaning Seeker",
-        "I'm a Purpose-Driven Developer",
-        "I'm an Insightful Analyst",
-        "I'm an Intuitive Problem Solver",
+        'I\'m a INFJ-T',
+        'I\'m a Game Developer',
+        'I\'m a Full Stack Developer',
+        'I\'m a UX/HCI Enthusiast',
+        'I\'m an Intuitive Problem Solver',
+        'I\'m a Deep Thinker'
     ],
     zh: [
-        "我是 INFJ-T",
-        "我是游戏开发者",
-        "我是全栈开发学习者",
-        "我是用户体验设计爱好者",
-        "我是人工智能探索者",
-        "我是富有洞察力的思考者",
-        "我是有远见的创造者",
-        "我是善于倾听的人",
-        "我是富有激情的创新者",
-        "我是深思熟虑的战略家",
-        "我是寻求意义的人",
-        "我是目标驱动的开发者",
-        "我是富有直觉的分析师",
-        "我是灵感驱动的设计者",
+        '我是INFJ-T',
+        '我是游戏开发者',
+        '我是全栈开发学习者',
+        '我是用户体验设计爱好者',
+        '我是灵感驱动的设计者',
+        '我是富有洞察力的思考者'
     ]
 };
 
