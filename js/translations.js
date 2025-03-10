@@ -86,7 +86,11 @@ const translations = {
             euclid: "Euclid Mathematics Contest",
             euclid_desc: "Excellence Award (Top 25%)",
             purple: "Purple Comet Math Meet",
-            purple_desc: "Team First Place (Ranked 1/3353)"
+            purple_desc: "Team First Place (Ranked 1/3353)",
+            calligraphy: "Chinese Soft Brush Calligraphy",
+            calligraphy_desc: "Level 10 Certificate (Highest Level)",
+            drums: "Drum Set",
+            drums_desc: "Level 8 Certificate (Out of 10)"
         },
 
         // Contact Section
@@ -193,7 +197,11 @@ const translations = {
             euclid: "欧几里得数学竞赛",
             euclid_desc: "卓越奖 (前25%)",
             purple: "紫色彗星数学竞赛",
-            purple_desc: "团队第一名 (排名 1/3353)"
+            purple_desc: "团队第一名 (排名 1/3353)",
+            calligraphy: "中国软笔书法",
+            calligraphy_desc: "10级证书 (满级10级)",
+            drums: "架子鼓",
+            drums_desc: "8级证书 (满级10级)"
         },
 
         // Contact Section
