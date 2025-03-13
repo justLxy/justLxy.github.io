@@ -74,7 +74,9 @@ const translations = {
             tetris_title: "MIPS Assembly Language Tetris Game",
             tetris_desc: "Independently developed a Tetris game in MIPS assembly language, implementing core mechanics including block generation, movement, rotation, and collision detection with a pixel-based UI.",
             todo_title: "Java-based Todo List Application",
-            todo_desc: "Led the development of a task and deadline management application using Java, implementing Clean Architecture principles and design patterns with comprehensive testing."
+            todo_desc: "Led the development of a task and deadline management application using Java, implementing Clean Architecture principles and design patterns with comprehensive testing.",
+            othello_title: "Advanced Othello AI with Alpha-Beta Pruning",
+            othello_desc: "Developed a strategic Othello/Reversi game with a custom AI using the Alpha-Beta pruning algorithm, dynamic heuristic evaluation."
         },
 
         // Skills Section
@@ -185,7 +187,9 @@ const translations = {
             tetris_title: "MIPS汇编语言俄罗斯方块游戏",
             tetris_desc: "独立开发MIPS汇编语言的俄罗斯方块游戏，实现方块生成、移动、旋转、碰撞检测等核心机制，使用基于像素的用户界面。",
             todo_title: "基于Java的Todo-list待办事项软件",
-            todo_desc: "领导开发任务和截止日期管理应用程序，使用Java实现，应用清洁架构原则和设计模式，进行全面测试。"
+            todo_desc: "领导开发任务和截止日期管理应用程序，使用Java实现，应用清洁架构原则和设计模式，进行全面测试。",
+            othello_title: "基于Alpha-Beta算法和原创启发式算法的黑白棋游戏对战AI",
+            othello_desc: "开发了一款战略性黑白棋/翻转棋游戏，使用Alpha-Beta剪枝算法、动态原创启发式评估智能AI。"
         },
 
         // Skills Section
