@@ -1069,7 +1069,7 @@ img {
     gap: var(--spacing-md);
     margin-top: var(--spacing-md);
     justify-content: flex-start;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .detail {
@@ -1082,7 +1082,7 @@ img {
 }
 
 .detail:nth-child(1) {
-    flex: 0.7;
+    flex: 0.6;
 }
 
 .detail:nth-child(2) {
@@ -1090,7 +1090,7 @@ img {
 }
 
 .detail:nth-child(3) {
-    flex: 1;
+    flex: 1.2;
 }
 
 .detail i {
@@ -1113,6 +1113,7 @@ img {
     word-wrap: break-word;
     word-break: break-word;
     line-height: 1.4;
+    white-space: nowrap;
 }
 
 /* ==========================================================================
