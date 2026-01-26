@@ -19,7 +19,7 @@ const translations = {
         hero: {
             description: "Student at University of Toronto from the class of 2026.",
             contact: "Contact Me",
-            resume: "Download Resume"
+            resume: "View Resume"
         },
 
         // About Section
@@ -170,7 +170,7 @@ const translations = {
         hero: {
             description: "多伦多大学 2026 届在读本科生。",
             contact: "联系我",
-            resume: "下载简历"
+            resume: "查看简历"
         },
 
         // About Section
