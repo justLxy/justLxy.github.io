@@ -17,7 +17,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "Incoming Columbia M.S. Computer Science student focused on AI, LLMs, RAG, and machine learning systems.",
+            description: "/* This is Xuanyi Lyu's personal homepage */",
             contact: "Contact Me",
             resume: "View Resume"
         },
@@ -26,7 +26,7 @@ const translations = {
         about: {
             title: "About Me",
             greeting: "Hello, I'm Xuanyi Lyu",
-            intro: "I'm an INFJ-T passionate about technology and innovation. I will pursue an M.S. in Computer Science at Columbia University after completing my Computer Science & Statistics studies at the University of Toronto.",
+            intro: "I'm an INFJ-T passionate about technology and innovation, with a Columbia University M.S. in Computer Science and a University of Toronto B.S. in Computer Science and Statistics.",
             interests: "My interests center on AI and large language models, including RAG, long-term memory, model integration, and intelligent agent applications.",
             goals: "I'm dedicated to building practical AI systems that connect rigorous machine learning ideas with reliable software engineering and real user needs.",
             name_label: "Name",
@@ -182,7 +182,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "即将就读哥伦比亚大学计算机科学硕士项目，方向聚焦 AI、大模型、RAG 与机器学习系统。",
+            description: "/* 这里是吕宣谊的个人主页 */",
             contact: "联系我",
             resume: "查看简历"
         },
@@ -191,7 +191,7 @@ const translations = {
         about: {
             title: "关于我",
             greeting: "你好，我是吕宣谊",
-            intro: "我是一名 INFJ-T 性格的学生，对技术和创新充满热情。完成多伦多大学计算机科学与统计学本科学习后，我将前往哥伦比亚大学攻读计算机科学理学硕士。",
+            intro: "我是一名 INFJ-T 性格的学生，对技术和创新充满热情，拥有哥伦比亚大学计算机科学硕士与多伦多大学计算机科学和统计学学士背景。",
             interests: "我的方向聚焦 AI 与大语言模型，包括 RAG、长期记忆、模型集成和智能体应用。",
             goals: "我希望构建实用可靠的 AI 系统，把机器学习方法、软件工程能力和真实用户需求结合起来。",
             name_label: "姓名",
