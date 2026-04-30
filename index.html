@@ -7,21 +7,13 @@
     <meta name="keywords" content="Xuanyi Lyu, 吕宣谊, Xuanyi, Columbia University, University of Toronto, UofT">
     <meta name="author" content="Xuanyi Lyu">
 
-    <title>Xuanyi Lyu | Personal Portfolio</title>
+    <title>Xuanyi Lyu | AI Algorithm Developer</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=SpWSmq4PRxdR&format=png&color=000000">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=SpWSmq4PRxdR&format=png&color=ffffff">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -55,732 +47,491 @@
     </script>
 </head>
 <body>
-<!-- Preloader -->
-<div class="preloader">
-    <div class="loader"></div>
-</div>
+    <!-- Noise Overlay -->
+    <div class="noise"></div>
 
-<!-- Particle Background -->
-<div id="particles-js"></div>
+    <!-- Custom Cursor -->
+    <!-- <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div> -->
 
-<!-- Header -->
-<header class="header">
-    <div class="container">
-        <div class="logo">
-            <a href="#" class="logo-text" data-i18n="name">Xuanyi Lyu</a>
-        </div>
-        <div class="language-toggle">
-            <button id="lang-en" class="active">EN</button>
-            <span>|</span>
-            <button id="lang-zh">中文</button>
-        </div>
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
-                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
-                <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
-                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
-                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
-                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
-                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
-</header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="starry-sky" id="starry-sky"></div>
-    
-    <div class="nebula"></div>
-    
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="Xuanyi Lyu" data-i18n="name">Xuanyi Lyu</h1>
-            <div class="typing-text">
-                <span class="typed"></span>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home" class="logo-text" data-i18n="name">Xuanyi Lyu</a>
             </div>
-            <p class="hero-description" data-i18n="hero.description">/* This is Xuanyi Lyu's personal homepage */</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn primary-btn" data-i18n="hero.contact">Contact Me</a>
-                <a href="吕宣谊简历 中文.pdf" class="btn secondary-btn" target="_blank" data-i18n="hero.resume">View Resume</a>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="language-toggle">
+                <button id="lang-en" class="active">EN</button>
+                <span>|</span>
+                <button id="lang-zh">中文</button>
             </div>
-            <div class="social-links">
-                <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/justLxy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/xuanyi-lyu-287681313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-    <div class="scroll-indicator">
-        <div class="mouse">
-            <div class="wheel"></div>
-        </div>
-        <div class="arrow">
-            <span></span>
-        </div>
-    </div>
-</section>
+    </header>
 
-<!-- About Section -->
-<section id="about" class="about section">
-    <div class="container">
-        <div class="section-header">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="bg-orb"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="name">Xuanyi Lyu</h1>
+                <h2 class="hero-subtitle" data-i18n="hero.subtitle">Software Engineer & AI Algorithm Developer.</h2>
+                <div class="typing-text">
+                    <span class="typed"></span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn" data-i18n="nav.projects">View Work</a>
+                    <a href="吕宣谊简历 中文.pdf" class="btn secondary-btn" target="_blank" data-i18n="hero.resume">Resume</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/justLxy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/xuanyi-lyu-287681313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Bento Box) -->
+    <section id="about" class="section">
+        <div class="container">
             <h2 class="section-title" data-i18n="about.title">About Me</h2>
-            <div class="section-divider"></div>
+            
+            <div class="bento-grid">
+                <!-- Intro Card -->
+                <div class="bento-item bento-large gs-reveal">
+                    <div class="bento-content">
+                        <h3 data-i18n="about.greeting">Hello, I'm Xuanyi Lyu</h3>
+                        <p data-i18n="about.intro" style="margin-bottom: 1rem;">I'm an INFJ-T passionate about technology and innovation, with a Columbia University M.S. in Computer Science and a University of Toronto B.S. in Computer Science and Statistics.</p>
+                        <p data-i18n="about.interests" style="margin-bottom: 1rem;">My interests center on AI and large language models, including RAG, long-term memory, model integration, and intelligent agent applications.</p>
+                        <p data-i18n="about.goals">I'm dedicated to building practical AI systems that connect rigorous machine learning ideas with reliable software engineering and real user needs.</p>
+                    </div>
+                </div>
+
+                <!-- Profile Image Card -->
+                <div class="bento-item bento-tall gs-reveal" style="padding: 0;">
+                    <div class="profile-img-container">
+                        <img src="https://avatars.githubusercontent.com/u/66059161?v=4" alt="Xuanyi Lyu">
+                    </div>
+                </div>
+
+                <!-- Education Cards -->
+                <div class="bento-item gs-reveal">
+                    <div class="bento-content">
+                        <i class="fas fa-graduation-cap" style="font-size: 2rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+                        <h3 data-i18n="education.columbia_degree">Master of Science</h3>
+                        <p data-i18n="education.columbia_university">Columbia University, New York</p>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">2026 - 2027</p>
+                    </div>
+                </div>
+
+                <div class="bento-item gs-reveal">
+                    <div class="bento-content">
+                        <i class="fas fa-university" style="font-size: 2rem; color: var(--text-secondary); margin-bottom: 1rem;"></i>
+                        <h3 data-i18n="education.degree">Bachelor of Science</h3>
+                        <p data-i18n="education.university">University of Toronto, Canada</p>
+                        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-secondary);">2022 - 2026</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-            <div class="about-image" data-aos="fade-right">
-                <div class="img-container">
-                    <img src="https://avatars.githubusercontent.com/u/66059161?s=400&u=b27ebd8ca519722ddc61045ecd3f10feaec73b4b&v=4" alt="Xuanyi Lyu" class="profile-img">
-                </div>
-            </div>
-            <div class="about-text" data-aos="fade-left">
-                <h3 data-i18n="about.greeting">Hello, I'm Xuanyi Lyu</h3>
-                <p data-i18n="about.intro">I'm an INFJ-T passionate about technology and innovation, with a Columbia University M.S. in Computer Science and a University of Toronto B.S. in Computer Science and Statistics.</p>
-                <p data-i18n="about.interests">My interests center on AI and large language models, including RAG, long-term memory, model integration, and intelligent agent applications.</p>
-                <p data-i18n="about.goals">I'm dedicated to building practical AI systems that connect rigorous machine learning ideas with reliable software engineering and real user needs.</p>
-                <div class="about-details">
-                    <div class="detail">
-                        <i class="fas fa-user"></i>
-                        <div>
-                            <h4 data-i18n="about.name_label">Name</h4>
-                            <p>Xuanyi Lyu</p>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4 data-i18n="about.email_label">Email</h4>
-                            <p>xuanyi.lyu@mail.utoronto.ca</p>
-                        </div>
-                    </div>
-                    <!-- Phone information removed for privacy -->
-                    <div class="detail">
-                        <i class="fas fa-graduation-cap"></i>
-                        <div>
-                            <h4 data-i18n="about.education_label">Education</h4>
-                            <p data-i18n="about.education_value">Columbia University / University of Toronto</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
+
+    <!-- Skills Marquee -->
+    <div class="marquee-container section" style="padding: 60px 0;">
+        <div class="marquee">
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PyTorch</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>RAG</span>
+            <span>LLM</span>
+            <span>System Design</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PyTorch</span>
+            <span>SQL</span>
+            <span>Machine Learning</span>
+            <span>RAG</span>
+            <span>LLM</span>
+            <span>System Design</span>
         </div>
     </div>
-</section>
 
-<!-- Education Section -->
-<section id="education" class="education section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title" data-i18n="education.title">Education</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-icon">
-                    <i class="fas fa-university"></i>
-                </div>
-                <div class="timeline-content">
-                    <span class="date">Sep 2026 - Dec 2027 (Expected)</span>
-                    <h3 data-i18n="education.columbia_degree">Master of Science</h3>
-                    <h4 data-i18n="education.columbia_program">Computer Science</h4>
-                    <p data-i18n="education.columbia_university">Columbia University, New York, United States</p>
-                    <div class="courses">
-                        <h5 data-i18n="education.focus_title">Academic Focus</h5>
-                        <p data-i18n="education.columbia_focus">Computer Science graduate study with focus on artificial intelligence, large language models, RAG, machine learning, and software systems.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up">
-                <div class="timeline-icon">
-                    <i class="fas fa-university"></i>
-                </div>
-                <div class="timeline-content">
-                    <span class="date">Sep 2022 - Apr 2026</span>
-                    <h3 data-i18n="education.degree">Bachelor of Science</h3>
-                    <h4 data-i18n="education.program">Computer Science & Statistics Double Major, Economics Minor</h4>
-                    <p data-i18n="education.university">University of Toronto, Toronto, Canada</p>
-                    <ul class="achievements">
-                        <li data-i18n="education.honors">Dean's List Scholar (2022-2025)</li>
-                        <li>IE+ Award: $1000</li>
-                        <li>SREP Award: $3000</li>
-                    </ul>
-                    <div class="courses">
-                        <h5 data-i18n="education.courses_title">Core Courses</h5>
-                        <p data-i18n="education.courses">Software Design, Data Structures and Analysis, Computer Organization, Systems Programming, UI/UX, Human-Computer Interaction, Databases, Probability, Statistics and Data Analysis, Web Programming, Artificial Intelligence</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="experience section">
-    <div class="container">
-        <div class="section-header">
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
             <h2 class="section-title" data-i18n="experience.title">Experience</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="experience-items">
-            <!-- Research Experience -->
-            <div class="experience-item" data-aos="fade-up">
-                <div class="experience-icon">
-                    <i class="fas fa-fingerprint"></i>
-                </div>
-                <div class="experience-content">
-                    <span class="date">Jun 2025 - Present</span>
-                    <h3 data-i18n="experience.trustmark_title">Multi-Standard Digital-Art Provenance Framework Based on TrustMark Watermarking</h3>
-                    <h4 data-i18n="experience.trustmark_role">Research Assistant under Prof. Daniel Chun (HKUST)</h4>
-                    <ul class="responsibilities">
-                        <li data-i18n="experience.trustmark_point1">Developed a unified, cross-standard provenance framework for digital images by integrating TrustMark imperceptible watermarking.</li>
-                        <li data-i18n="experience.trustmark_point2">Enabled seamless embedding and verification of leading standards (C2PA, W3C DID, DCI 3.0, Art ID) to ensure artwork authenticity and traceability.</li>
+            
+            <div class="timeline">
+                <!-- HKUST -->
+                <div class="timeline-item gs-reveal">
+                    <span class="timeline-date">Jun 2025 - Present</span>
+                    <h3 class="timeline-title" data-i18n="experience.trustmark_title">Digital Content Trust Traceability and Art Authentication Application Development</h3>
+                    <div class="timeline-role" data-i18n="experience.trustmark_role">Research Assistant | Supervisor: Prof. Daniel Chun</div>
+                    <ul class="timeline-content">
+                        <li data-i18n="experience.trustmark_point1">Addressed vulnerabilities in traditional C2PA metadata stripping during image compression and screenshots in the AIGC era.</li>
+                        <li data-i18n="experience.trustmark_point2">Designed and implemented a hybrid provenance framework integrating TrustMark imperceptible watermarking with C2PA content credentials. Proposed a persistent content credential scheme of 'metadata hard binding + watermark soft binding'.</li>
+                        <li data-i18n="experience.trustmark_point3">Awards & Funding: SREP (Summer Research Exchange Program) Award (20,000 RMB); selected via competitive Centre for International Experience (CIE) nomination.</li>
                     </ul>
                 </div>
-            </div>
 
-            <div class="experience-item" data-aos="fade-up">
-                <div class="experience-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="experience-content">
-                    <span class="date">Jan 2025 – Sep 2025</span>
-                    <h3 data-i18n="experience.cssu_title">Full-Stack Loyalty Platform Development for Computer Science Student Union (CSSU)</h3>
-                    <h4 data-i18n="experience.cssu_role">Web Developer & 1st Place Winner</h4>
-                    <ul class="responsibilities">
-                        <li data-i18n="experience.cssu_point1">Won 1st place (among 60+ teams) in the Winter 2025 Web Design Contest by overwhelming vote; invited by Prof. Jack Sun to further develop the project as UofT CSSU's official loyalty-rewards platform under his supervision.</li>
-                        <li data-i18n="experience.cssu_point2">Built with React.js (frontend) and Node.js/Express.js/PrismaORM/PostgreSQL (backend); integrated JWT-based authentication, implemented a CI/CD pipeline via GitHub Actions with Jest testing, and deployed on Vercel and Railway.</li>
+                <!-- CSSU -->
+                <div class="timeline-item gs-reveal">
+                    <span class="timeline-date">Jan 2025 – Sep 2025</span>
+                    <h3 class="timeline-title" data-i18n="experience.cssu_title">Full-Stack Loyalty Platform Development for Computer Science Student Union (CSSU)</h3>
+                    <div class="timeline-role" data-i18n="experience.cssu_role">Web Developer & 1st Place Winner</div>
+                    <ul class="timeline-content">
+                        <li data-i18n="experience.cssu_point1">Won 1st place among 61 teams in the Winter 2025 Web Design Contest by overwhelming vote; subsequently invited by Prof. Jack Sun to continue developing the project as the official CSSU loyalty platform.</li>
+                        <li data-i18n="experience.cssu_point2">Introduced LLM collaborative development (Vibe Coding) through prompt engineering to translate natural language requirements into technical specs. Developed a full-stack architecture using React.js, Node.js, Express.js, Prisma, and PostgreSQL with CI/CD.</li>
                     </ul>
                 </div>
-            </div>
 
-            <!-- Personal Experience -->
-            <div class="experience-item" data-aos="fade-up">
-                <div class="experience-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="experience-content">
-                    <span class="date">Sep 2024 - Present</span>
-                    <h3 data-i18n="experience.club_title">University of Toronto Chinese Club</h3>
-                    <h4 data-i18n="experience.club_role">Director, Information Solutions Department</h4>
-                    <ul class="responsibilities">
-                        <li data-i18n="experience.club_point1">Built club website and facilitated collaboration across departments, streamlining event engagement for 100+ members.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Entrepreneurship -->
-            <div class="experience-item" data-aos="fade-up">
-                <div class="experience-icon">
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <div class="experience-content">
-                    <span class="date">Oct 2016 - Present</span>
-                    <h3 data-i18n="experience.minecraft_title">Commercial Minecraft Role-Playing Game (RPG) Server</h3>
-                    <h4 data-i18n="experience.minecraft_role">Founder & Operator</h4>
-                    <ul class="responsibilities">
-                        <li data-i18n="experience.minecraft_point1">Launched and scaled an original RPG server, attracting 10,000+ unique players in total and sustaining 60+ concurrent active users through engaging PvP systems, boss events, and in-game monetization (subscriptions, merchandise).</li>
-                        <li data-i18n="experience.minecraft_point2">Fostered and managed a loyal player community of 150+ daily active users, increasing player retention by 35% via targeted feedback loops (Chat groups, in-game mail, polls, and surveys).</li>
-                        <li data-i18n="experience.minecraft_point3">Designed and developed custom thematic maps, 3D weapon models, lore, and 8,000+ words of scripted narrative, enhancing player immersion and increasing average play time by 40%.</li>
-                        <li data-i18n="experience.minecraft_point4">Drove server growth by optimizing digital marketing across TikTok, WeChat, and Minecraft forums (e.g., MCBBS), resulting in an average of 20+ new player sign-ups per day and a 15% month-over-month traffic increase.</li>
+                <!-- Minecraft -->
+                <div class="timeline-item gs-reveal">
+                    <span class="timeline-date">Oct 2016 - Present</span>
+                    <h3 class="timeline-title" data-i18n="experience.minecraft_title">Commercial Minecraft Role-Playing Game (RPG) Server</h3>
+                    <div class="timeline-role" data-i18n="experience.minecraft_role">Founder & Operator</div>
+                    <ul class="timeline-content">
+                        <li data-i18n="experience.minecraft_point1">Launched and scaled an original RPG server from 0 to 1, attracting 10,000+ unique players in total and sustaining 100+ concurrent active users through engaging PvP systems, boss events, and in-game monetization (subscriptions, merchandise).</li>
+                        <li data-i18n="experience.minecraft_point2">Cultivated a loyal community of daily active users and increased player retention by 55% via targeted feedback loops (e.g., chat groups, in-game mail, polls, and surveys).</li>
+                        <li data-i18n="experience.minecraft_point3">Designed and developed custom thematic maps, 3D weapon models, lore, and 10,000+ words of scripted narrative, integrated NPC dialogue with LLMs, enhancing player immersion.</li>
+                        <li data-i18n="experience.minecraft_point4">Drove server growth with digital marketing across TikTok, WeChat, and Minecraft forums, generating 20+ daily sign-ups.</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects section">
-    <div class="container">
-        <div class="section-header">
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
             <h2 class="section-title" data-i18n="projects.title">Projects</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">All</button>
-            <button class="filter-btn" data-filter="ux" data-i18n="projects.filter_ux">UX/HCI</button>
-            <button class="filter-btn" data-filter="data" data-i18n="projects.filter_data">Data Analysis</button>
-            <button class="filter-btn" data-filter="development" data-i18n="projects.filter_dev">Development</button>
-        </div>
-        <div class="project-grid">
-            <!-- Minecraft AI NPC Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071" alt="Minecraft AI NPC Plugin">
-                    <div class="project-overlay">
-                        <div class="project-links">
+            
+            <div class="project-filters gs-reveal">
+                <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">All</button>
+                <button class="filter-btn" data-filter="ux" data-i18n="projects.filter_ux">UX/HCI</button>
+                <button class="filter-btn" data-filter="data" data-i18n="projects.filter_data">Data Analysis</button>
+                <button class="filter-btn" data-filter="development" data-i18n="projects.filter_dev">Development</button>
+            </div>
+
+            <div class="project-grid">
+                <!-- Minecraft AI -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071" alt="Minecraft AI">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Jan 2026 - Present</span>
+                        <h3 class="project-title" data-i18n="projects.minecraft_ai_title">Minecraft AI NPC Dialogue Plugin</h3>
+                        <p class="project-description" data-i18n="projects.minecraft_ai_desc">Built an AI NPC dialogue plugin for Minecraft servers, integrating LLM APIs, embedding APIs, RAG knowledge retrieval, and model-driven long-term memory.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>RAG</span><span>LLM</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <span class="project-date">Jan 2026 - Present</span>
-                    <h3 class="project-title" data-i18n="projects.minecraft_ai_title">Minecraft AI NPC Dialogue Plugin with RAG and Long-Term Memory</h3>
-                    <p class="project-description" data-i18n="projects.minecraft_ai_desc">Built an AI NPC dialogue plugin for Minecraft servers, integrating LLM APIs, embedding APIs, RAG knowledge retrieval, and model-driven long-term memory for persistent context-aware conversations.</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>RAG</span>
-                        <span>LLM</span>
-                        <span>Embeddings</span>
-                        <span>Minecraft Plugin</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Minecraft Economy Control Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070" alt="Minecraft Economy Control Plugin">
-                    <div class="project-overlay">
+                <!-- Minecraft Economy -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070" alt="Minecraft Economy">
                         <div class="project-links">
+                            <a href="https://github.com/justLxy" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Jan 2026 - Present</span>
+                        <h3 class="project-title" data-i18n="projects.minecraft_economy_title">Adaptive Minecraft Server Economy Control Plugin</h3>
+                        <p class="project-description" data-i18n="projects.minecraft_economy_desc">Designed a self-adjusting economy plugin using player transaction logs, online value discovery, dynamic AMM pricing, and statistical learning.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>Statistical Learning</span><span>AMM</span>
                         </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <span class="project-date">Jan 2026 - Present</span>
-                    <h3 class="project-title" data-i18n="projects.minecraft_economy_title">Adaptive Minecraft Server Economy Control Plugin</h3>
-                    <p class="project-description" data-i18n="projects.minecraft_economy_desc">Designed a self-adjusting economy plugin using player transaction logs, online value discovery, dynamic AMM pricing, bilateral quotes, statistical learning, and abnormal-trade detection.</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Statistical Learning</span>
-                        <span>AMM</span>
-                        <span>Risk Control</span>
-                        <span>Minecraft Plugin</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Computer Graphics Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070" alt="Whispers of the Windmill Graphics Project">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2025 - Dec 2025</span>
-                    <h3 class="project-title" data-i18n="projects.windmill_title">Computer Graphics Project: Whispers of the Windmill</h3>
-                    <p class="project-description" data-i18n="projects.windmill_desc">Created a rendering system with ray tracing, shader pipelines, and physical animation. Used dynamic BVH acceleration for efficient intersection tests on an 11,000+ triangle scene.</p>
-                    <div class="project-tech">
-                        <span>C++</span>
-                        <span>Computer Graphics</span>
-                        <span>Ray Tracing</span>
-                        <span>BVH</span>
-                        <span>Physics Animation</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- OS Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=2070" alt="OS Project">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <!-- No link provided in resume, leaving empty or maybe github if implied -->
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2025 - Present</span>
-                    <h3 class="project-title" data-i18n="projects.os_title">OS User-Level Threading Library & Virtual Memory Simulator</h3>
-                    <p class="project-description" data-i18n="projects.os_desc">Engineered a user-level thread library in C with cooperative/preemptive multithreading. Built a virtual memory simulator with hierarchical page tables.</p>
-                    <div class="project-tech">
-                        <span>C</span>
-                        <span>Multithreading</span>
-                        <span>Virtual Memory</span>
-                        <span>Systems Programming</span>
-                        <span>Make</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CSSU Rewards Platform Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074" alt="CSSU Rewards Platform">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="https://github.com/justLxy/PointPulse" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Jan 2025 – Sep 2025</span>
-                    <h3 class="project-title" data-i18n="projects.cssu_title">Full-Stack Rewards Platform for Computer Science Student Union</h3>
-                    <p class="project-description" data-i18n="projects.cssu_desc">Won 1st place in Winter 2025 Web Design Contest (60+ teams). Developing UofT CSSU's official loyalty-rewards platform under Prof. Jack Sun's supervision. Full-stack application with modern CI/CD pipeline.</p>
-                    <div class="project-tech">
-                        <span>React.js</span>
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>PrismaORM</span>
-                        <span>PostgreSQL</span>
-                        <span>JWT</span>
-                        <span>GitHub Actions</span>
-                        <span>Jest</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TrustMark Digital Art Provenance Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2058" alt="Digital Art Provenance">
-                    <div class="project-overlay">
+                <!-- TrustMark -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2058" alt="TrustMark">
                         <div class="project-links">
                             <a href="https://github.com/justLxy/Watermark" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Jun 2025 - Present</span>
-                    <h3 class="project-title" data-i18n="projects.trustmark_title">Multi-Standard Digital-Art Provenance Framework</h3>
-                    <p class="project-description" data-i18n="projects.trustmark_desc">Research project under Prof. Daniel Chun (HKUST). Unified framework integrating TrustMark watermarking with C2PA, W3C DID, DCI 3.0, and Art ID standards for digital artwork authenticity and traceability.</p>
-                    <div class="project-tech">
-                        <span>TrustMark</span>
-                        <span>C2PA</span>
-                        <span>W3C DID</span>
-                        <span>DCI 3.0</span>
-                        <span>Art ID</span>
-                        <span>Digital Watermarking</span>
+                    <div class="project-info">
+                        <span class="project-date">Jun 2025 - Present</span>
+                        <h3 class="project-title" data-i18n="projects.trustmark_title">Digital Content Trust Traceability and Art Authentication</h3>
+                        <p class="project-description" data-i18n="projects.trustmark_desc">Designed and implemented a hybrid provenance framework integrating TrustMark imperceptible watermarking with C2PA content credentials.</p>
+                        <div class="project-tech">
+                            <span>TrustMark</span><span>C2PA</span><span>W3C DID</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- UTChinese Network Project -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="public/utchinese.png" alt="UTChinese Network">
-                    <div class="project-overlay">
+                <!-- CSSU -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074" alt="CSSU">
+                        <div class="project-links">
+                            <a href="https://github.com/justLxy/PointPulse" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Jan 2025 – Sep 2025</span>
+                        <h3 class="project-title" data-i18n="projects.cssu_title">Full-Stack Loyalty Platform Development for Computer Science Student Union (CSSU)</h3>
+                        <p class="project-description" data-i18n="projects.cssu_desc">Introduced LLM collaborative development (Vibe Coding) through prompt engineering. Developed a full-stack architecture using React.js, Node.js, Express.js, Prisma, and PostgreSQL.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windmill -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070" alt="Windmill">
+                        <div class="project-links">
+                            <a href="https://github.com/justLxy/Whispers-of-the-Windmill" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2025 - Dec 2025</span>
+                        <h3 class="project-title" data-i18n="projects.windmill_title">Computer Graphics Project: Whispers of the Windmill</h3>
+                        <p class="project-description" data-i18n="projects.windmill_desc">Created a rendering system with ray tracing, shader pipelines, and physical animation. Used dynamic BVH acceleration for efficient intersection tests.</p>
+                        <div class="project-tech">
+                            <span>C++</span><span>Ray Tracing</span><span>BVH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OS Project -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=2070" alt="OS Project">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2025 - Present</span>
+                        <h3 class="project-title" data-i18n="projects.os_title">OS User-Level Threading Library</h3>
+                        <p class="project-description" data-i18n="projects.os_desc">Engineered a user-level thread library in C with cooperative/preemptive multithreading. Built a virtual memory simulator with hierarchical page tables.</p>
+                        <div class="project-tech">
+                            <span>C</span><span>Multithreading</span><span>Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UTChinese -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="public/utchinese.png" alt="UTChinese" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070'">
                         <div class="project-links">
                             <a href="https://utchinese.org" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
                             <a href="https://github.com/justLxy/UofT-ChineseClub" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2024 - Apr 2025</span>
-                    <h3 class="project-title" data-i18n="projects.utchinese_title">UTChinese Network Official Website</h3>
-                    <p class="project-description" data-i18n="projects.utchinese_desc">Developed a comprehensive web platform for UofT's Chinese student organization, featuring bilingual support, cultural event showcases, and community engagement tools with modern interactive interfaces.</p>
-                    <div class="project-tech">
-                        <span>React.js</span>
-                        <span>Styled-components</span>
-                        <span>GSAP</span>
-                        <span>Framer Motion</span>
-                        <span>React-i18next</span>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2024 - Apr 2025</span>
+                        <h3 class="project-title" data-i18n="projects.utchinese_title">University of Toronto Chinese Club</h3>
+                        <p class="project-description" data-i18n="projects.utchinese_desc">Developed a comprehensive web platform for UofT's Chinese student organization, featuring bilingual support and cultural event showcases.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>GSAP</span><span>Framer Motion</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 1 -->
-            <div class="project-card" data-category="ux" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" alt="Financial Management App">
-                    <div class="project-overlay">
+                <!-- Financial UX -->
+                <div class="project-card gs-reveal" data-category="ux">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070" alt="Financial App">
                         <div class="project-links">
                             <a href="https://www.figma.com/proto/C5SYnUR10xDjdHGDMPAcqB/Dream-Painter-App?node-id=374-25&starting-point-node-id=927%3A55&t=LMDGbNijLLlJlGnI-1" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2024 - Dec 2024</span>
-                    <h3 class="project-title" data-i18n="projects.financial_title">UX/HCI-Driven Financial Management Application Design</h3>
-                    <p class="project-description" data-i18n="projects.financial_desc">Led formative research through interviews (8 participants), surveys (70 respondents), and observation. Designed and tested prototypes, increasing task success rate by 32%. Achieved 95% satisfaction rate and reduced task completion time by 47%.</p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>User Research</span>
-                        <span>Prototyping</span>
-                        <span>Usability Testing</span>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2024 - Dec 2024</span>
+                        <h3 class="project-title" data-i18n="projects.financial_title">UX/HCI-Driven Financial Management App</h3>
+                        <p class="project-description" data-i18n="projects.financial_desc">Led formative research through interviews and surveys. Designed and tested prototypes, increasing task success rate by 32%.</p>
+                        <div class="project-tech">
+                            <span>Figma</span><span>User Research</span><span>Prototyping</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="project-card" data-category="data" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1518407613690-d9fc990e795f?q=80&w=2070" alt="NBA Data Analysis">
-                    <div class="project-overlay">
+                <!-- NBA Data -->
+                <div class="project-card gs-reveal" data-category="data">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1518407613690-d9fc990e795f?q=80&w=2070" alt="NBA Data">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2024 - May 2025</span>
+                        <h3 class="project-title" data-i18n="projects.nba_title">Statistics and Data Analysis of NBA Players</h3>
+                        <p class="project-description" data-i18n="projects.nba_desc">Led basketball analytics project in R. Built multiple linear regression models with rigorous diagnostics including VIF and Box-Cox transformation.</p>
+                        <div class="project-tech">
+                            <span>R</span><span>Statistical Analysis</span><span>Linear Regression</span>
+                        </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2024 - May 2025</span>
-                    <h3 class="project-title" data-i18n="projects.nba_title">Statistics and Data Analysis of NBA Player Performance</h3>
-                    <p class="project-description" data-i18n="projects.nba_desc">Led basketball analytics project in R, executing comprehensive data cleaning and exploratory analysis on 1,100+ NBA player records. Built multiple linear regression models with rigorous diagnostics including VIF, outlier analysis, and Box-Cox transformation.</p>
-                    <div class="project-tech">
-                        <span>R</span>
-                        <span>Statistical Analysis</span>
-                        <span>Linear Regression</span>
-                        <span>Data Visualization</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" alt="Tetris Game">
-                    <div class="project-overlay">
+                <!-- Tetris -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070" alt="Tetris">
                         <div class="project-links">
                             <a href="https://github.com/justLxy/Tetris" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Jan 2024 - May 2024</span>
-                    <h3 class="project-title" data-i18n="projects.tetris_title">MIPS Assembly Language Tetris Game</h3>
-                    <p class="project-description" data-i18n="projects.tetris_desc">Implemented core Tetris mechanics in MIPS assembly, including block generation, movement, rotation, and collision detection. Designed dynamic pixel-based UI with Bitmap Display and integrated keyboard controls for seamless real-time gameplay.</p>
-                    <div class="project-tech">
-                        <span>Assembly</span>
-                        <span>MIPS</span>
-                        <span>Game Development</span>
-                        <span>Bitmap Display</span>
+                    <div class="project-info">
+                        <span class="project-date">Jan 2024 - May 2024</span>
+                        <h3 class="project-title" data-i18n="projects.tetris_title">MIPS Assembly Language Tetris Game</h3>
+                        <p class="project-description" data-i18n="projects.tetris_desc">Implemented core Tetris mechanics in MIPS assembly, including block generation, movement, rotation, and collision detection.</p>
+                        <div class="project-tech">
+                            <span>Assembly</span><span>MIPS</span><span>Game Dev</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 4 -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=2070" alt="Todo List App">
-                    <div class="project-overlay">
+                <!-- Todo App -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=2070" alt="Todo App">
                         <div class="project-links">
                             <a href="https://github.com/justLxy/Todolist-Project" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Sep 2023 - Jan 2024</span>
-                    <h3 class="project-title" data-i18n="projects.todo_title">Java-based Todo List App for Task and Deadline Management</h3>
-                    <p class="project-description" data-i18n="projects.todo_desc">Implemented "Clean Architecture" and advanced design patterns (Builder, Observer, Strategy) to achieve high modularity and scalability. Achieved 100% test coverage with JUnit 5 and integrated Todoist API for seamless cloud sync.</p>
-                    <div class="project-tech">
-                        <span>Java</span>
-                        <span>Clean Architecture</span>
-                        <span>Design Patterns</span>
-                        <span>JUnit 5</span>
+                    <div class="project-info">
+                        <span class="project-date">Sep 2023 - Jan 2024</span>
+                        <h3 class="project-title" data-i18n="projects.todo_title">Java-based Todo List App</h3>
+                        <p class="project-description" data-i18n="projects.todo_desc">Implemented "Clean Architecture" and advanced design patterns. Achieved 100% test coverage with JUnit 5 and integrated Todoist API.</p>
+                        <div class="project-tech">
+                            <span>Java</span><span>Clean Architecture</span><span>JUnit 5</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project: Othello AI -->
-            <div class="project-card" data-category="development" data-aos="fade-up">
-                <div class="project-img">
-                    <img src="https://i0.wp.com/xstreamed.tv/wp-content/uploads/2021/08/Othello-2.jpg?fit=1345%2C1009&ssl=1" alt="Othello AI Game">
-                    <div class="project-overlay">
+                <!-- Othello -->
+                <div class="project-card gs-reveal" data-category="development">
+                    <div class="project-img">
+                        <img src="https://i0.wp.com/xstreamed.tv/wp-content/uploads/2021/08/Othello-2.jpg?fit=1345%2C1009&ssl=1" alt="Othello">
                         <div class="project-links">
                             <a href="https://lvxy.cc/Othello" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>
                             <a href="https://github.com/justLxy/othello" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="project-info">
-                    <span class="project-date">Jan 2025 – May 2025</span>
-                    <h3 class="project-title" data-i18n="projects.othello_title">Advanced Othello AI with Alpha-Beta Pruning</h3>
-                    <p class="project-description" data-i18n="projects.othello_desc">Developed a strategic Othello/Reversi game with a custom AI using the Alpha-Beta pruning algorithm, dynamic heuristic evaluation, and multilingual support.</p>
-                    <div class="project-tech">
-                        <span>JavaScript</span>
-                        <span>CSS</span>
-                        <span>HTML</span>
-                        <span>AI Algorithm</span>
-                        <span>Game Theory</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="skills section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title" data-i18n="skills.title">Skills</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="skills-content">
-            <!-- Technical Skills -->
-            <div class="skills-category" data-aos="fade-up">
-                <h3 data-i18n="skills.tech_title">Technical Skills</h3>
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-code"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.languages">Languages</h4>
-                            <p data-i18n="skills.languages_list">Java, R, Python, C/C++, SQL, TypeScript/JavaScript/HTML/CSS, Assembly language</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.technologies">Technologies</h4>
-                            <p data-i18n="skills.technologies_list">Git, Linux, Microsoft Office, Figma, Canva, Photoshop, Next.js/Node.js/React, Terraform, Kubernetes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category" data-aos="fade-up">
-                <h3 data-i18n="skills.achievements">Achievements</h3>
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.usaco">USA Computing Olympiad (USACO)</h4>
-                            <p data-i18n="skills.usaco_desc">Gold Division (Ranked 1/3676)</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.euclid">Euclid Mathematics Contest</h4>
-                            <p data-i18n="skills.euclid_desc">Excellence Award (Top 25%)</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.purple">Purple Comet Math Meet</h4>
-                            <p data-i18n="skills.purple_desc">Team First Place (Ranked 1/3353)</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-pen-fancy"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.calligraphy">Chinese Soft Brush Calligraphy</h4>
-                            <p data-i18n="skills.calligraphy_desc">Level 10 Certificate (Highest Level)</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-drum"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.drums">Drum Set</h4>
-                            <p data-i18n="skills.drums_desc">Level 8 Certificate (Out of 10)</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <div class="achievement-icon"><i class="fas fa-heart"></i></div>
-                        <div class="achievement-content">
-                            <h4 data-i18n="skills.volunteer">Community Volunteer</h4>
-                            <p data-i18n="skills.volunteer_desc">100+ hours supporting community services at library, fire station, and blood center (2021 - Present)</p>
+                    <div class="project-info">
+                        <span class="project-date">Jan 2025 – May 2025</span>
+                        <h3 class="project-title" data-i18n="projects.othello_title">Intelligent Othello Game Agent</h3>
+                        <p class="project-description" data-i18n="projects.othello_desc">Developed a strategic Othello game with a custom AI using the Alpha-Beta pruning algorithm and dynamic heuristic evaluation.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span><span>AI Algorithm</span><span>Game Theory</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title" data-i18n="contact.title">Contact Me</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info" data-aos="fade-right">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3 data-i18n="contact.email">Email</h3>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-text gs-reveal">
+                    <h2 data-i18n="contact.title">Let's Talk</h2>
+                    
+                    <div class="contact-item" style="margin-top: 3rem;">
+                        <h4 data-i18n="contact.email">Email</h4>
                         <p><a href="mailto:xuanyi.lyu@mail.utoronto.ca">xuanyi.lyu@mail.utoronto.ca</a></p>
                     </div>
-                </div>
-                <!-- Phone contact information removed for privacy -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3 data-i18n="contact.location">Location</h3>
-                        <p data-i18n="contact.location_value">Toronto, Canada</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form" data-aos="fade-left">
-                <form id="contactForm">
-                    <!-- Honeypot field - hidden from users but visible to bots -->
-                    <div class="form-group honeypot-field" style="position: absolute; left: -9999px;">
-                        <label for="website">Website</label>
-                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-                    </div>
                     
-                    <div class="form-group">
-                        <label for="name" data-i18n="contact.name">Name</label>
-                        <input type="text" id="name" required minlength="2" maxlength="50">
+                    <div class="contact-item">
+                        <h4 data-i18n="contact.location">Location</h4>
+                        <p data-i18n="contact.location_value">Toronto, Canada / New York, USA</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email" data-i18n="contact.email_address">Email Address</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject" data-i18n="contact.subject">Subject</label>
-                        <input type="text" id="subject" required minlength="3" maxlength="100">
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-i18n="contact.message">Message</label>
-                        <textarea id="message" rows="5" required minlength="10" maxlength="1000"></textarea>
-                    </div>
-                    <button type="submit" class="btn primary-btn" data-i18n="contact.send">Send Message</button>
-                </form>
+                </div>
+                
+                <div class="contact-form gs-reveal">
+                    <form id="contactForm">
+                        <div class="form-group honeypot-field" style="position: absolute; left: -9999px;">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" required minlength="2" maxlength="50">
+                            <label for="name" data-i18n="contact.name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email" data-i18n="contact.email_address">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required minlength="3" maxlength="100">
+                            <label for="subject" data-i18n="contact.subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required minlength="10" maxlength="1000"></textarea>
+                            <label for="message" data-i18n="contact.message">Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn" data-i18n="contact.send">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>Xuanyi Lyu</h3>
-                <p data-i18n="footer.tagline">Computer Science & Statistics Student</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Xuanyi Lyu
+                </div>
+                <div class="social-links" style="margin-top: 0;">
+                    <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/justLxy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/xuanyi-lyu-287681313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
-                    <li><a href="#about" data-i18n="nav.about">About</a></li>
-                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="mailto:xuanyi.lyu@mail.utoronto.ca" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Xuanyi Lyu. All rights reserved.</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer.copyright">&copy; 2025 Xuanyi Lyu. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Back to Top Button -->
-<div class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-</div>
-
-<!-- Typed.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
-<!-- AOS Animation Library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Scripts -->
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
     <!-- Google reCAPTCHA v3 -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LdpmfwrAAAAAAX8tqQs8X-LcHv4gyhjbvwQcxMG"></script>
@@ -793,10 +544,9 @@
         })();
     </script>
 
-<!-- Custom JS -->
-<script src="js/anti-spam-config.js"></script>
-<script src="js/translations.js"></script>
-<script src="js/main.js"></script>
-<script src="js/starry-sky.js"></script>
+    <!-- Custom JS -->
+    <script src="js/anti-spam-config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
