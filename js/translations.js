@@ -17,7 +17,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "Incoming M.S. Computer Science student at Columbia University and University of Toronto graduate.",
+            description: "Incoming Columbia M.S. Computer Science student focused on AI, LLMs, RAG, and machine learning systems.",
             contact: "Contact Me",
             resume: "View Resume"
         },
@@ -27,8 +27,8 @@ const translations = {
             title: "About Me",
             greeting: "Hello, I'm Xuanyi Lyu",
             intro: "I'm an INFJ-T passionate about technology and innovation. I will pursue an M.S. in Computer Science at Columbia University after completing my Computer Science & Statistics studies at the University of Toronto.",
-            interests: "My interests include UX/HCI, Artificial Intelligence, and Machine Learning. I enjoy creating solutions that combine technical excellence with user-centered design.",
-            goals: "I'm dedicated to academic exploration and technological innovation, seeking to make meaningful contributions to society through my work in computer science and data analysis.",
+            interests: "My interests center on AI and large language models, including RAG, long-term memory, model integration, and intelligent agent applications.",
+            goals: "I'm dedicated to building practical AI systems that connect rigorous machine learning ideas with reliable software engineering and real user needs.",
             name_label: "Name",
             email_label: "Email",
             education_label: "Education",
@@ -42,7 +42,7 @@ const translations = {
             columbia_program: "Computer Science",
             columbia_university: "Columbia University, New York, United States",
             focus_title: "Academic Focus",
-            columbia_focus: "Computer Science graduate study with continued focus on artificial intelligence, machine learning, and software systems.",
+            columbia_focus: "Computer Science graduate study with focus on artificial intelligence, large language models, RAG, machine learning, and software systems.",
             degree: "Bachelor of Science",
             program: "Computer Science & Statistics Double Major, Economics Minor",
             university: "University of Toronto, Toronto, Canada",
@@ -182,7 +182,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "即将就读哥伦比亚大学计算机科学硕士项目，多伦多大学本科毕业生。",
+            description: "即将就读哥伦比亚大学计算机科学硕士项目，方向聚焦 AI、大模型、RAG 与机器学习系统。",
             contact: "联系我",
             resume: "查看简历"
         },
@@ -192,8 +192,8 @@ const translations = {
             title: "关于我",
             greeting: "你好，我是吕宣谊",
             intro: "我是一名 INFJ-T 性格的学生，对技术和创新充满热情。完成多伦多大学计算机科学与统计学本科学习后，我将前往哥伦比亚大学攻读计算机科学理学硕士。",
-            interests: "我的兴趣领域包括人机交互、人工智能和机器学习。我喜欢创造结合技术卓越和以用户为中心设计的解决方案。",
-            goals: "我致力于学术探索和技术创新，希望通过我在计算机科学和数据分析方面的工作为社会做出有意义的贡献。",
+            interests: "我的方向聚焦 AI 与大语言模型，包括 RAG、长期记忆、模型集成和智能体应用。",
+            goals: "我希望构建实用可靠的 AI 系统，把机器学习方法、软件工程能力和真实用户需求结合起来。",
             name_label: "姓名",
             email_label: "邮箱",
             education_label: "教育",
@@ -207,7 +207,7 @@ const translations = {
             columbia_program: "计算机科学",
             columbia_university: "哥伦比亚大学，美国纽约",
             focus_title: "学术方向",
-            columbia_focus: "计算机科学研究生学习，持续关注人工智能、机器学习与软件系统方向。",
+            columbia_focus: "计算机科学研究生学习，重点关注人工智能、大语言模型、RAG、机器学习与软件系统方向。",
             degree: "理学学士",
             program: "计算机科学与统计学双专业，经济学辅修",
             university: "多伦多大学，多伦多，加拿大",

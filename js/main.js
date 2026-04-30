@@ -25,17 +25,19 @@ let typed = null;
 const typedStrings = {
     en: [
         'I\'m a INFJ-T',
-        'I\'m a Game Developer',
+        'I\'m an AI/LLM Builder',
+        'I\'m a RAG Developer',
         'I\'m a Full Stack Developer',
-        'I\'m a UX/HCI Enthusiast',
+        'I\'m a Machine Learning Enthusiast',
         'I\'m an Intuitive Problem Solver',
         'I\'m a Deep Thinker'
     ],
     zh: [
         '我是INFJ-T',
-        '我是游戏开发者',
+        '我是 AI / 大模型开发者',
+        '我是 RAG 应用开发者',
         '我是全栈开发学习者',
-        '我是用户体验设计爱好者',
+        '我是机器学习爱好者',
         '我是灵感驱动的设计者',
         '我是富有洞察力的思考者'
     ]
