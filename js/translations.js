@@ -17,7 +17,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "Student at University of Toronto from the class of 2026.",
+            description: "Incoming M.S. Computer Science student at Columbia University and University of Toronto graduate.",
             contact: "Contact Me",
             resume: "View Resume"
         },
@@ -26,18 +26,23 @@ const translations = {
         about: {
             title: "About Me",
             greeting: "Hello, I'm Xuanyi Lyu",
-            intro: "I'm an INFJ-T passionate about technology and innovation. Currently pursuing a double major in Computer Science & Statistics with a minor in Economics at the University of Toronto.",
+            intro: "I'm an INFJ-T passionate about technology and innovation. I will pursue an M.S. in Computer Science at Columbia University after completing my Computer Science & Statistics studies at the University of Toronto.",
             interests: "My interests include UX/HCI, Artificial Intelligence, and Machine Learning. I enjoy creating solutions that combine technical excellence with user-centered design.",
             goals: "I'm dedicated to academic exploration and technological innovation, seeking to make meaningful contributions to society through my work in computer science and data analysis.",
             name_label: "Name",
             email_label: "Email",
             education_label: "Education",
-            education_value: "University of Toronto"
+            education_value: "Columbia University / University of Toronto"
         },
 
         // Education Section
         education: {
             title: "Education",
+            columbia_degree: "Master of Science",
+            columbia_program: "Computer Science",
+            columbia_university: "Columbia University, New York, United States",
+            focus_title: "Academic Focus",
+            columbia_focus: "Computer Science graduate study with continued focus on artificial intelligence, machine learning, and software systems.",
             degree: "Bachelor of Science",
             program: "Computer Science & Statistics Double Major, Economics Minor",
             university: "University of Toronto, Toronto, Canada",
@@ -101,7 +106,16 @@ const translations = {
             trustmark_title: "Interoperable Provenance Metadata for the Art & Museum Sector",
             trustmark_desc: "Designed a unified provenance framework integrating TrustMark watermarking with C2PA, W3C DIDs, and Art ID. Enabled secure embedding and verification for artwork authenticity. Won SREP and IE+ Awards.",
 
-            // New Project
+            // New Projects
+            minecraft_ai_title: "Minecraft AI NPC Dialogue Plugin with RAG and Long-Term Memory",
+            minecraft_ai_desc: "Built an AI NPC dialogue plugin for Minecraft servers, integrating LLM APIs, embedding APIs, RAG knowledge retrieval, and model-driven long-term memory for persistent context-aware conversations.",
+            
+            minecraft_economy_title: "Adaptive Minecraft Server Economy Control Plugin",
+            minecraft_economy_desc: "Designed a self-adjusting economy plugin using player transaction logs, online value discovery, dynamic AMM pricing, bilateral quotes, statistical learning, and abnormal-trade detection.",
+            
+            windmill_title: "Computer Graphics Project: Whispers of the Windmill",
+            windmill_desc: "Created a rendering system with ray tracing, shader pipelines, and physical animation. Used dynamic BVH acceleration for efficient intersection tests on an 11,000+ triangle scene.",
+            
             os_title: "OS User-Level Threading Library & Virtual Memory Simulator",
             os_desc: "Engineered a user-level thread library in C with cooperative/preemptive multithreading and synchronization. Built a virtual memory simulator with hierarchical page tables, demand paging, and copy-on-write optimization."
         },
@@ -168,7 +182,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            description: "多伦多大学 2026 届在读本科生。",
+            description: "即将就读哥伦比亚大学计算机科学硕士项目，多伦多大学本科毕业生。",
             contact: "联系我",
             resume: "查看简历"
         },
@@ -177,18 +191,23 @@ const translations = {
         about: {
             title: "关于我",
             greeting: "你好，我是吕宣谊",
-            intro: "我是一名INFJ-T性格的学生，对技术和创新充满热情。目前在多伦多大学攻读计算机科学与统计学双专业，辅修经济学。",
+            intro: "我是一名 INFJ-T 性格的学生，对技术和创新充满热情。完成多伦多大学计算机科学与统计学本科学习后，我将前往哥伦比亚大学攻读计算机科学理学硕士。",
             interests: "我的兴趣领域包括人机交互、人工智能和机器学习。我喜欢创造结合技术卓越和以用户为中心设计的解决方案。",
             goals: "我致力于学术探索和技术创新，希望通过我在计算机科学和数据分析方面的工作为社会做出有意义的贡献。",
             name_label: "姓名",
             email_label: "邮箱",
             education_label: "教育",
-            education_value: "多伦多大学"
+            education_value: "哥伦比亚大学 / 多伦多大学"
         },
 
         // Education Section
         education: {
             title: "教育背景",
+            columbia_degree: "理学硕士",
+            columbia_program: "计算机科学",
+            columbia_university: "哥伦比亚大学，美国纽约",
+            focus_title: "学术方向",
+            columbia_focus: "计算机科学研究生学习，持续关注人工智能、机器学习与软件系统方向。",
             degree: "理学学士",
             program: "计算机科学与统计学双专业，经济学辅修",
             university: "多伦多大学，多伦多，加拿大",
@@ -251,7 +270,16 @@ const translations = {
             trustmark_title: "艺术与博物馆领域的可互操作溯源元数据",
             trustmark_desc: "设计统一溯源框架，集成TrustMark水印、C2PA、W3C DID和Art ID。实现艺术品真实性的安全嵌入和验证。获得SREP和IE+奖项。",
 
-            // New Project
+            // New Projects
+            minecraft_ai_title: "基于 RAG 与长期记忆增强的 Minecraft 服务器 AI NPC 对话插件",
+            minecraft_ai_desc: "独立设计并开发面向 Minecraft 服务器的 AI NPC 对话插件，集成大模型 API、Embedding API、知识库 RAG 与模型驱动长期记忆，实现知识召回、记忆持久化和增强回复生成。",
+            
+            minecraft_economy_title: "Minecraft 服务器经济自适应调控插件",
+            minecraft_economy_desc: "基于玩家交易日志构建在线价值发现与风控算法，融合动态 AMM、双边报价、阶段化统计学习与异常交易识别，使物品价格能够随真实供需自动收敛。",
+            
+            windmill_title: "计算机图形学项目：风车的低语",
+            windmill_desc: "构建包含光线追踪、着色器管线与物理动画的渲染系统；利用动态 BVH 加速结构，实现 11,000+ 三角形场景的高效求交计算。",
+            
             os_title: "操作系统用户级线程库与虚拟内存模拟器",
             os_desc: "用C语言设计用户级线程库，实现协作/抢占式多线程。构建具有分级页表、按需分页和写时复制优化的虚拟内存模拟器。"
         },
