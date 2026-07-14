@@ -1,84 +1,90 @@
 /* ============================================================
    Xuanyi Lyu — homepage interactions
-   - scroll-driven circular "portal" zoom (sticky stage)
+   - cinematic background-video switcher (crossfade)
+   - mobile menu overlay
    - EN / 中 language toggle
-   - nav background on scroll
    - fade-up reveals for lower sections
    ============================================================ */
 
 (function () {
   "use strict";
 
-  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
-  const lerp = (a, b, t) => a + (b - a) * t;
+  /* ---------- background video switcher ---------- */
+  const videos = Array.from(document.querySelectorAll(".hero__video"));
+  const switchBtns = Array.from(document.querySelectorAll(".hero__switch-btn"));
+  const heroTheme = document.getElementById("heroTheme");
+  const DARK_INDEX = 2; // "Deep Woods"
+  const CROSSFADE = 1000;
 
-  /* ---------- scroll-driven portal zoom ---------- */
-  const stage = document.getElementById("stage");
-  const portal = document.getElementById("portal");
-  const heroText = document.getElementById("heroText");
-  const revealText = document.getElementById("revealText");
+  const AUTO_INTERVAL = 7000; // dwell time on each scene before auto-advancing
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // how large the circle must grow to cover the viewport (diagonal / base size)
-  function computeMaxScale() {
-    const base = window.innerHeight * 0.46; // matches .portal width/height (46vh)
-    const diagonal = Math.hypot(window.innerWidth, window.innerHeight);
-    return (diagonal * 1.15) / base;
+  let activeVideo = 0;
+  let isTransitioning = false;
+  let autoTimer = null;
+
+  function setVideo(index) {
+    if (index === activeVideo || isTransitioning || !videos.length) return;
+    isTransitioning = true;
+
+    videos.forEach((v, i) => v.classList.toggle("is-active", i === index));
+    switchBtns.forEach((b, i) => b.classList.toggle("is-active", i === index));
+    if (heroTheme) heroTheme.classList.toggle("is-dark", index === DARK_INDEX);
+
+    activeVideo = index;
+    setTimeout(() => { isTransitioning = false; }, CROSSFADE);
   }
-  let maxScale = computeMaxScale();
 
-  let ticking = false;
+  function stopAuto() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+  function startAuto() {
+    if (reduceMotion || videos.length < 2) return;
+    stopAuto();
+    autoTimer = setInterval(() => {
+      setVideo((activeVideo + 1) % videos.length);
+    }, AUTO_INTERVAL);
+  }
 
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      const rect = stage.getBoundingClientRect();
-      const scrollable = stage.offsetHeight - window.innerHeight;
-      // progress 0 -> 1 across the sticky stage
-      const progress = clamp(-rect.top / scrollable, 0, 1);
-
-      // Phase A (0 -> 0.6): the circle zooms out to fill the screen
-      // Phase B (0.6 -> 1): hold + hand off to the page
-      const zoom = clamp(progress / 0.62, 0, 1);
-      const eased = zoom * zoom * (3 - 2 * zoom); // smoothstep
-
-      const scale = lerp(1, maxScale, eased);
-      const radius = lerp(50, 0, clamp(eased * 1.4, 0, 1)); // circle -> square
-      portal.style.transform = `translate(-50%, -50%) scale(${scale})`;
-      portal.style.borderRadius = radius + "%";
-
-      // hero text drifts apart and fades as we zoom in
-      const heroFade = clamp(1 - zoom * 1.6, 0, 1);
-      heroText.style.opacity = heroFade;
-      const spread = eased * 60;
-      heroText.style.setProperty("--spread", spread + "px");
-
-      // reveal text fades in near the end of the zoom
-      const revealIn = clamp((zoom - 0.55) / 0.4, 0, 1);
-      revealText.style.opacity = revealIn;
-      revealText.style.transform = `scale(${lerp(1.08, 1, revealIn)})`;
-
-      ticking = false;
+  switchBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setVideo(Number(btn.dataset.video));
+      startAuto(); // reset the countdown after a manual pick
     });
-  }
-
-  window.addEventListener("scroll", onScroll, { passive: true });
-  window.addEventListener("resize", () => {
-    maxScale = computeMaxScale();
-    onScroll();
   });
-  onScroll();
 
-  /* ---------- nav background on scroll ---------- */
-  const nav = document.getElementById("nav");
-  function onNavScroll() {
-    nav.classList.toggle("is-scrolled", window.scrollY > 40);
+  // pause the carousel while the tab is hidden, resume on return
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) stopAuto();
+    else startAuto();
+  });
+
+  startAuto();
+
+  /* ---------- mobile menu ---------- */
+  const burger = document.getElementById("burger");
+  const hmenu = document.getElementById("hmenu");
+
+  function closeMenu() {
+    if (!hmenu) return;
+    hmenu.classList.remove("is-open");
+    burger.classList.remove("is-open");
+    burger.setAttribute("aria-expanded", "false");
   }
-  window.addEventListener("scroll", onNavScroll, { passive: true });
-  onNavScroll();
+  function toggleMenu() {
+    if (!hmenu) return;
+    const open = !hmenu.classList.contains("is-open");
+    hmenu.classList.toggle("is-open", open);
+    burger.classList.toggle("is-open", open);
+    burger.setAttribute("aria-expanded", String(open));
+  }
+  if (burger) burger.addEventListener("click", toggleMenu);
+  if (hmenu) {
+    hmenu.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+    hmenu.querySelector(".hmenu__backdrop").addEventListener("click", closeMenu);
+  }
 
   /* ---------- language toggle ---------- */
-  const langToggle = document.getElementById("langToggle");
   const STORAGE_KEY = "lyu-lang";
   let lang = localStorage.getItem(STORAGE_KEY) || "en";
 
@@ -89,7 +95,7 @@
       const val = el.getAttribute("data-" + next);
       if (val !== null) el.innerHTML = val;
     });
-    langToggle.querySelectorAll("[data-lang]").forEach((span) => {
+    document.querySelectorAll("[data-lang]").forEach((span) => {
       span.classList.toggle("is-active", span.dataset.lang === next);
     });
     // switch fonts subtly for CJK legibility
@@ -102,9 +108,13 @@
     localStorage.setItem(STORAGE_KEY, next);
   }
 
-  langToggle.addEventListener("click", () => {
+  function toggleLang() {
     applyLang(lang === "en" ? "zh" : "en");
-  });
+  }
+  const langToggle = document.getElementById("langToggle");
+  const langToggleMobile = document.getElementById("langToggleMobile");
+  if (langToggle) langToggle.addEventListener("click", toggleLang);
+  if (langToggleMobile) langToggleMobile.addEventListener("click", toggleLang);
   applyLang(lang);
 
   /* ---------- fade-up reveals ---------- */

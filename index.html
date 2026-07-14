@@ -7,83 +7,119 @@
   <meta name="description" content="Xuanyi Lyu (吕宣谊) — Computer Science & Statistics. Columbia University · University of Toronto." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- ===================== NAV ===================== -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__logo">Lyu</a>
-      <nav class="nav__links">
-        <a href="#about" data-en="ABOUT" data-zh="关于">ABOUT</a>
-        <a href="#education" data-en="EDUCATION" data-zh="教育">EDUCATION</a>
-        <a href="#contact" data-en="CONTACT" data-zh="联系">CONTACT</a>
-      </nav>
-      <button class="nav__lang" id="langToggle" aria-label="Switch language">
-        <span class="is-active" data-lang="en">EN</span>
-        <span class="nav__lang-sep">/</span>
-        <span data-lang="zh">中</span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ===================== HERO + ZOOM ===================== -->
   <div id="top"></div>
-  <section class="stage" id="stage">
-    <div class="stage__sticky">
 
-      <!-- moody hero backdrop -->
-      <div class="stage__bg"></div>
+  <!-- ===================== CINEMATIC VIDEO HERO ===================== -->
+  <section class="hero-section" id="hero">
 
-      <!-- the expanding circular portal -->
-      <div class="portal" id="portal">
-        <div class="portal__media">
-          <img
-            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1600&q=80"
-            alt=""
-            onerror="this.style.display='none'"
-          />
-          <div class="portal__grain"></div>
+    <!-- Background video layer (z-index 0) -->
+    <div class="hero__videos">
+      <video class="hero__video is-active" data-video="0" autoplay muted loop playsinline
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_081127_0992a171-d3c6-4978-8213-0ec5df8b6d63.mp4"></video>
+      <video class="hero__video" data-video="1" autoplay muted loop playsinline
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_092026_dd05b805-ea0f-40b2-8c52-332b88502592.mp4"></video>
+      <video class="hero__video" data-video="2" autoplay muted loop playsinline
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_081042_df7202bf-bd80-4b2b-bbc6-1f09ba2870e9.mp4"></video>
+      <video class="hero__video" data-video="3" autoplay muted loop playsinline
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260702_080959_4cac5234-3573-464e-a5b7-76b94b8a7d61.mp4"></video>
+    </div>
+
+    <!-- Transparent PNG overlay (z-index 1) -->
+    <img class="hero__overlay" aria-hidden="true"
+      src="https://soft-zoom-63098134.figma.site/_assets/v11/0b4a435b2df2747593c43d7a1c9b4578f7d8d90c.png" alt="" />
+
+    <!-- Content layer (z-index 2) -->
+    <div class="hero__content">
+
+      <!-- Nav -->
+      <header class="hnav">
+        <a href="#top" class="hnav__logo">Lyu</a>
+
+        <nav class="hnav__pill liquid-glass">
+          <a href="#about" data-en="About" data-zh="关于">About</a>
+          <a href="#education" data-en="Education" data-zh="教育">Education</a>
+          <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+          <button class="hnav__lang" id="langToggle" aria-label="Switch language">
+            <span class="is-active" data-lang="en">EN</span>
+            <span class="hnav__lang-sep">/</span>
+            <span data-lang="zh">中</span>
+          </button>
+          <a class="btn-white" href="mailto:xuanyi.lyu@columbia.edu" data-en="Get in Touch" data-zh="联系我">Get in Touch</a>
+        </nav>
+
+        <button class="hnav__burger liquid-glass" id="burger" aria-label="Open menu" aria-expanded="false">
+          <svg class="ic ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="ic ic-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </header>
+
+      <!-- Hero centre -->
+      <div class="hero__centre" id="heroTheme">
+        <div class="hero__badge liquid-glass">
+          <span class="hero__badge-dot"></span>
+          <span data-en="Not your typical STEM kid"
+                data-zh="不太像个理科生">Not your typical STEM kid</span>
         </div>
-      </div>
 
+        <h1 class="hero__title">
+          <span data-en="Half Logic," data-zh="一半理性，">Half Logic,</span><br />
+          <span data-en="Half Imagination" data-zh="一半想象">Half Imagination</span>
+        </h1>
 
-      <!-- HERO text layer -->
-      <div class="hero" id="heroText">
-        <span class="hero__year">*2026</span>
-
-        <div class="hero__title">
-          <span class="hero__small" data-en="wandering" data-zh="游走于">wandering</span>
-          <span class="hero__big" data-en="Logic" data-zh="理性">Logic</span>
-          <span class="hero__amp" data-en="&amp;" data-zh="与">&amp;</span>
-          <span class="hero__big hero__big--offset" data-en="Imagination" data-zh="想象">Imagination</span>
-        </div>
-
-        <p class="hero__tagline" data-en="COMPUTER SCIENCE · STATISTICS · AI" data-zh="计算机科学 · 统计学 · 人工智能">
-          COMPUTER SCIENCE · STATISTICS · AI
+        <p class="hero__sub"
+           data-en="Born in China, shaped by Toronto and New York. I work on the algorithms behind large language models — but what moves me is building AI that understands people and actually helps. I'm as drawn to a novel or a gallery as I am to code."
+           data-zh="生于中国，被多伦多与纽约慢慢塑形。我做大语言模型背后的算法——但真正打动我的，是让人工智能读懂人、真正帮到人。一本小说、一间美术馆，对我的吸引力不亚于一行代码。">
+          Born in China, shaped by Toronto and New York. I work on the algorithms behind large language models — but what moves me is building AI that understands people and actually helps. I'm as drawn to a novel or a gallery as I am to code.
         </p>
 
-        <div class="hero__scroll">
-          <span data-en="SCROLL DOWN" data-zh="向下滚动">SCROLL DOWN</span>
-          <span class="hero__arrow"></span>
+        <div class="hero__actions">
+          <a class="btn-white" href="mailto:xuanyi.lyu@columbia.edu" data-en="Say Hello" data-zh="打个招呼">Say Hello</a>
+          <a class="btn-ghost liquid-glass" href="%E5%90%95%E5%AE%A3%E8%B0%8A%E7%AE%80%E5%8E%86%20%E4%B8%AD%E6%96%87.pdf" download
+             aria-label="Download résumé">
+            <svg class="btn-ghost__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span data-en="Download Résumé" data-zh="下载简历">Download Résumé</span>
+          </a>
+        </div>
+
+        <div class="hero__switch" id="switch">
+          <button class="hero__switch-btn is-active" data-video="0" data-en="Golden Hour" data-zh="暮光">Golden Hour</button>
+          <button class="hero__switch-btn" data-video="1" data-en="Still Water" data-zh="静水">Still Water</button>
+          <button class="hero__switch-btn" data-video="2" data-en="Deep Woods" data-zh="深林">Deep Woods</button>
+          <button class="hero__switch-btn" data-video="3" data-en="Quiet Dawn" data-zh="晨曦">Quiet Dawn</button>
         </div>
       </div>
 
-      <!-- ABOUT text layer (revealed as the circle fills the screen) -->
-      <div class="reveal" id="revealText">
-        <div class="reveal__inner">
-          <span class="reveal__small" data-en="hello, I'm" data-zh="你好，我是">hello, I'm</span>
-          <h1 class="reveal__big">
-            <span data-en="Xuanyi" data-zh="宣谊">Xuanyi</span>
-            <span class="reveal__big-2" data-en="Lyu" data-zh="吕">Lyu</span>
-          </h1>
-          <span class="reveal__meta" data-en="COLUMBIA UNIVERSITY — NEW YORK" data-zh="哥伦比亚大学 — 纽约">
-            COLUMBIA UNIVERSITY — NEW YORK
-          </span>
-        </div>
+      <!-- Bottom stats -->
+      <div class="hero__stats">
+        <span data-en="China → Toronto → New York" data-zh="中国 → 多伦多 → 纽约">China → Toronto → New York</span>
+        <span class="hero__stats-sep">|</span>
+        <span data-en="INFJ" data-zh="INFJ 人格">INFJ</span>
+        <span class="hero__stats-sep">|</span>
+        <span data-en="TFT &amp; Minecraft" data-zh="金铲铲 &amp; 我的世界">TFT &amp; Minecraft</span>
+        <span class="hero__stats-sep">|</span>
+        <span data-en="Curious by default" data-zh="天生好奇">Curious by default</span>
       </div>
+    </div>
 
+    <!-- Mobile menu overlay -->
+    <div class="hmenu" id="hmenu">
+      <div class="hmenu__backdrop"></div>
+      <nav class="hmenu__panel">
+        <a href="#about" data-en="About" data-zh="关于">About</a>
+        <a href="#education" data-en="Education" data-zh="教育">Education</a>
+        <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+        <button class="hmenu__lang" id="langToggleMobile">
+          <span class="is-active" data-lang="en">EN</span>
+          <span class="hnav__lang-sep">/</span>
+          <span data-lang="zh">中</span>
+        </button>
+        <a class="btn-white hmenu__cta" href="mailto:xuanyi.lyu@columbia.edu" data-en="Get in Touch" data-zh="联系我">Get in Touch</a>
+        <a class="hmenu__resume" href="%E5%90%95%E5%AE%A3%E8%B0%8A%E7%AE%80%E5%8E%86%20%E4%B8%AD%E6%96%87.pdf" download data-en="Download Résumé" data-zh="下载简历">Download Résumé</a>
+      </nav>
     </div>
   </section>
 
@@ -92,18 +128,22 @@
     <div class="about__label" data-en="/ 01 — ABOUT" data-zh="/ 01 — 关于">/ 01 — ABOUT</div>
     <div class="about__grid">
       <h2 class="about__head">
-        <span data-en="between" data-zh="在">between</span>
-        <em data-en="curiosity" data-zh="好奇">curiosity</em>
-        <span data-en="and rigor" data-zh="与严谨之间">and rigor</span>
+        <span data-en="a person," data-zh="先是一个人，">a person,</span>
+        <em data-en="first" data-zh="然后才是">first</em>
+        <span data-en="— then the code" data-zh="一行代码">— then the code</span>
       </h2>
       <div class="about__body">
-        <p data-en="I'm Xuanyi Lyu — a Computer Science and Statistics student drawn to the place where rigorous mathematics meets human curiosity."
-           data-zh="我是吕宣谊——一名计算机科学与统计学的学生，着迷于严谨的数学与人类好奇心相遇的地方。">
-          I'm Xuanyi Lyu — a Computer Science and Statistics student drawn to the place where rigorous mathematics meets human curiosity.
+        <p data-en="I grew up in China and left home at eighteen — first to Toronto, then to New York. Somewhere along that route, moving between languages and cities became less a fact about my life and more a way of seeing: from the outside, a little sideways, always half-translating."
+           data-zh="我在中国出生长大，十八岁离家——先是多伦多，后来是纽约。在这条路上的某处，穿梭于不同语言与城市之间，渐渐从一件生活里的事，变成了一种看世界的方式：站在外面，稍微偏一点角度，始终在心里做着某种翻译。">
+          I grew up in China and left home at eighteen — first to Toronto, then to New York. Somewhere along that route, moving between languages and cities became less a fact about my life and more a way of seeing: from the outside, a little sideways, always half-translating.
         </p>
-        <p data-en="My work orbits artificial intelligence: large language models, retrieval-augmented generation, and the statistical foundations that teach machines to reason. I like technology that feels a little like magic while resting on solid theory."
-           data-zh="我的兴趣围绕着人工智能：大语言模型、检索增强生成，以及让机器学会推理的统计基础。我喜欢那种建立在坚实理论之上、却又带着一丝魔法的技术。">
-          My work orbits artificial intelligence: large language models, retrieval-augmented generation, and the statistical foundations that teach machines to reason. I like technology that feels a little like magic while resting on solid theory.
+        <p data-en="On paper I'm a computer science person. In practice I've never quite fit the mold — I read novels between proofs, wander galleries the way other people scroll, and think an INFJ's quiet attention to what people actually feel is an engineering skill, not a distraction from one."
+           data-zh="纸面上，我是个搞计算机的人。但我从来没真正装进那个模子里——我在两道证明之间读小说，像别人刷手机那样逛美术馆，也始终相信 INFJ 那种对他人真实感受的安静体察，本身就是一种工程能力，而不是它的对立面。">
+          On paper I'm a computer science person. In practice I've never quite fit the mold — I read novels between proofs, wander galleries the way other people scroll, and think an INFJ's quiet attention to what people actually feel is an engineering skill, not a distraction from one.
+        </p>
+        <p data-en="What pulls me is the seam where AI meets everything else. I work on the algorithms behind large language models, but the question underneath is human: can we build systems that genuinely understand people and make their lives lighter? When I'm not chasing that, you'll probably find me deep in a round of TFT or building something needlessly elaborate in Minecraft — the same itch to plan, arrange, and see it come alive."
+           data-zh="真正牵引我的，是人工智能与其他一切相交的那道缝。我研究大语言模型背后的算法，但底下那个问题始终关乎人：我们能不能造出真正读懂人、让人活得轻松一点的系统？不写代码的时候，我大概率在金铲铲的某一局里排兵布阵，或者在《我的世界》里搭一座毫无必要却极其讲究的建筑——都是同一种冲动：谋划、编排，然后看它活过来。">
+          What pulls me is the seam where AI meets everything else. I work on the algorithms behind large language models, but the question underneath is human: can we build systems that genuinely understand people and make their lives lighter? When I'm not chasing that, you'll probably find me deep in a round of TFT or building something needlessly elaborate in Minecraft — the same itch to plan, arrange, and see it come alive.
         </p>
       </div>
     </div>
@@ -128,9 +168,9 @@
         <span class="edu__date">SEP 2026 — FEB 2028</span>
         <p class="edu__degree" data-en="M.S. in Computer Science · New York, NY" data-zh="计算机科学理学硕士 · 美国纽约">M.S. in Computer Science · New York, NY</p>
         <p class="edu__desc"
-           data-en="Deepening a focus on artificial intelligence — large language models, retrieval systems, and the theory that lets machines reason at scale."
-           data-zh="进一步深入人工智能方向——大语言模型、检索系统，以及让机器大规模推理的理论基础。">
-          Deepening a focus on artificial intelligence — large language models, retrieval systems, and the theory that lets machines reason at scale.
+           data-en="Where I am now — working on the algorithms behind large language models, and thinking about how they might actually understand the people who use them."
+           data-zh="我如今所在的地方——研究大语言模型背后的算法，也琢磨着它们究竟能否真正读懂使用它们的人。">
+          Where I am now — working on the algorithms behind large language models, and thinking about how they might actually understand the people who use them.
         </p>
       </div>
     </article>
@@ -150,9 +190,9 @@
         <span class="edu__date">SEP 2022 — MAY 2026</span>
         <p class="edu__degree" data-en="Honours B.Sc. · Toronto, Canada" data-zh="荣誉理学学士 · 加拿大多伦多">Honours B.Sc. · Toronto, Canada</p>
         <p class="edu__desc"
-           data-en="Double major in Computer Science &amp; Statistics, minor in Economics. GPA 3.8/4.0. Dean's List Scholar for four consecutive years."
-           data-zh="计算机科学与统计学双主修，经济学辅修。专业总绩点 3.8/4.0，连续四年入选院长优秀生名单。">
-          Double major in Computer Science &amp; Statistics, minor in Economics. GPA 3.8/4.0. Dean's List Scholar for four consecutive years.
+           data-en="Four years in Canada that taught me more than coursework — a double major in Computer Science and Statistics with an Economics minor, and the slow art of feeling at home somewhere new."
+           data-zh="在加拿大的四年，教给我的远不止课业——计算机科学与统计学双主修、经济学辅修，还有在一个陌生地方慢慢住成家的那门功课。">
+          Four years in Canada that taught me more than coursework — a double major in Computer Science and Statistics with an Economics minor, and the slow art of feeling at home somewhere new.
         </p>
         <ul class="edu__tags">
           <li data-en="Machine Learning" data-zh="机器学习">Machine Learning</li>
