@@ -1,0 +1,71 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Lyu" [ref=e4] [cursor=pointer]:
+        - /url: "#top"
+      - navigation [ref=e5]:
+        - link "ABOUT" [ref=e6] [cursor=pointer]:
+          - /url: "#about"
+        - link "EDUCATION" [ref=e7] [cursor=pointer]:
+          - /url: "#education"
+        - link "CONTACT" [ref=e8] [cursor=pointer]:
+          - /url: "#contact"
+      - button "Switch language" [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]: EN
+        - generic [ref=e11]: /
+        - generic [ref=e12]: 中
+  - generic [ref=e14]:
+    - generic:
+      - generic: "*2026"
+      - generic:
+        - generic: wandering
+        - generic: Logic
+        - generic: "&"
+        - generic: Imagination
+      - paragraph: COMPUTER SCIENCE · STATISTICS · AI
+      - generic: SCROLL DOWN
+    - generic:
+      - generic:
+        - generic: hello, I'm
+        - heading "Xuanyi Lyu" [level=1]
+        - generic: COLUMBIA UNIVERSITY — NEW YORK
+  - generic [ref=e19]:
+    - generic [ref=e20]: / 01 — ABOUT
+    - generic [ref=e21]:
+      - heading [level=2] [ref=e22]:
+        - text: between
+        - emphasis [ref=e23]: curiosity
+        - text: and rigor
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: I'm Xuanyi Lyu — a Computer Science and Statistics student drawn to the place where rigorous mathematics meets human curiosity.
+        - paragraph [ref=e26]: "My work orbits artificial intelligence: large language models, retrieval-augmented generation, and the statistical foundations that teach machines to reason. I like technology that feels a little like magic while resting on solid theory."
+  - generic [ref=e27]:
+    - generic [ref=e28]: / 02 — EDUCATION
+    - article [ref=e29]:
+      - generic [ref=e33]:
+        - heading "Columbia University" [level=3] [ref=e34]
+        - generic [ref=e35]: SEP 2026 — FEB 2028
+        - paragraph [ref=e36]: M.S. in Computer Science · New York, NY
+        - paragraph [ref=e37]: Deepening a focus on artificial intelligence — large language models, retrieval systems, and the theory that lets machines reason at scale.
+    - article [ref=e38]:
+      - generic [ref=e42]:
+        - heading "University of Toronto" [level=3] [ref=e43]
+        - generic [ref=e44]: SEP 2022 — MAY 2026
+        - paragraph [ref=e45]: Honours B.Sc. · Toronto, Canada
+        - paragraph [ref=e46]: Double major in Computer Science & Statistics, minor in Economics. GPA 3.8/4.0. Dean's List Scholar for four consecutive years.
+        - list [ref=e47]:
+          - listitem [ref=e48]: Machine Learning
+          - listitem [ref=e49]: Deep Learning
+          - listitem [ref=e50]: Probability
+          - listitem [ref=e51]: Data Analysis
+  - contentinfo [ref=e52]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]: Lyu
+        - generic [ref=e57]: © Xuanyi Lyu, 2026
+      - generic [ref=e58]:
+        - link "EMAIL" [ref=e59] [cursor=pointer]:
+          - /url: mailto:xuanyi.lyu@columbia.edu
+        - link "GITHUB" [ref=e60] [cursor=pointer]:
+          - /url: https://github.com/justLxy
+        - generic [ref=e61]: WECHAT · yukiyah
